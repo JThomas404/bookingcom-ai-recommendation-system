@@ -1,0 +1,21 @@
+# Terraform
+.terraform/
+.terraform.lock.hcl
+*.tfstate
+*.tfstate.*
+*.tfstate.backup
+terraform.tfvars
+
+# Python
+__pycache__/
+*.pyc
+
+# macOS
+.DS_Store
+
+# Logs & Archives
+*.log
+*.zip
+
+# Editor/IDE history
+.history
