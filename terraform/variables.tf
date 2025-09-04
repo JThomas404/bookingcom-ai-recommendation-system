@@ -19,9 +19,7 @@ variable "aws_region" {
 }
 
 variable "tags" {
-  type = map(string)
-  default = {
-    Project     = "bkr"
-    Environment = "dev"
-  }
+  type    = map(string)
+  default = {}
 }
+

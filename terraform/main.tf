@@ -4,7 +4,11 @@ module "storage" {
   project_prefix = var.project_prefix
   environment    = var.environment
   aws_region     = var.aws_region
-  tags           = var.tags
+
+  tags = {
+    Project     = var.project_prefix
+    Environment = var.environment
+  }
 }
 
 module "compute" {
@@ -14,6 +18,12 @@ module "compute" {
   environment          = var.environment
   aws_region           = var.aws_region
   dynamodb_table_names = module.storage.dynamodb-table-names
-  tags                 = var.tags
+  s3_bucket_names      = module.storage.s3-bucket-names
+  kms_key_arn          = module.storage.kms-key-arn
+
+  tags = {
+    Project     = var.project_prefix
+    Environment = var.environment
+  }
 }
 

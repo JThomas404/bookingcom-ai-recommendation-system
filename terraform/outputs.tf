@@ -16,7 +16,7 @@ output "dynamodb-table-names" {
   value       = module.storage.dynamodb-table-names
 }
 
-output "api_url" {
+output "api-url" {
   description = "API Gateway URL for testing"
   value       = module.compute.api_gateway_invoke_url
 }

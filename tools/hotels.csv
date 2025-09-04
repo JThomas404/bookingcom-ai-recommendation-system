@@ -1,0 +1,501 @@
+hotel_id,city_id,hotel_name,rating,price_band,tags,popularity_score
+HOTEL_001,CITY_005,Paradise Heights Resort,2.0,luxury,"Golf Course,Balcony,Scenic Location,Pet Friendly",67
+HOTEL_002,CITY_013,Seaside Crown Hotel,3.5,budget,"Garden,Outdoor Pool,Family Rooms",64
+HOTEL_003,CITY_017,Boutique Plaza Hotel,3.0,budget,"High Speed Internet,Conference Facilities,Mountain View,Hotel",-5
+HOTEL_004,CITY_048,Oasis Heights Resort,4.0,budget,"Conference Facilities,Outdoor Pool,Heating,Babysitting",60
+HOTEL_005,CITY_039,Coastal Royal Resort,4.0,mid,"Outdoor Activities,Pool Service,Swimming Pool,Secretarial Services,Late Check Out",272
+HOTEL_006,CITY_007,Riverside Plaza Resort,4.0,mid,"Ticket Service,Hotel,Beach Access,Playground,Non Smoking,Connecting Rooms",2
+HOTEL_007,CITY_028,Supreme Royal Hotel,3.5,budget,"Business Hotel,USB Charging,Jacuzzi",196
+HOTEL_008,CITY_037,Oasis Plaza Resort,3.0,mid,"4 Star,Half Board,Garden View",119
+HOTEL_009,CITY_048,Riverside Royal Resort,4.5,mid,"Business Center,Late Check Out,Work Desk",91
+HOTEL_010,CITY_025,Central Plaza Resort,4.0,mid,"Safe,Bar,Fitness Center,Hostel",20
+HOTEL_011,CITY_003,Green Royal Resort,4.0,mid,"Airport Nearby,Inn,Business Lounge,Free WiFi,Smart TV,Deluxe",24
+HOTEL_012,CITY_039,Executive Crown Resort,4.0,luxury,"Ocean View,Playground,Wellness Center,Garden",45
+HOTEL_013,CITY_023,Grand Central Hotel,3.0,luxury,"Entertainment District,Beachfront,City Center,Indoor Activities",73
+HOTEL_014,CITY_034,Mountain Royal Hotel,4.0,luxury,"Inn,Bike Rental,Airport Nearby",-1
+HOTEL_015,CITY_029,Midtown Plaza Resort,4.5,budget,"Secretarial Services,Mid-Range,USB Charging,Early Check In,Budget,Conference Facilities",-1
+HOTEL_016,CITY_004,Horizon Heights Hotel,4.5,budget,"Boardroom,Free WiFi,Conference Facilities",72
+HOTEL_017,CITY_033,Stylish Crown Hotel,4.0,luxury,"Breakfast Included,Early Check In,Library,5 Star,Yoga Classes",264
+HOTEL_018,CITY_026,Lakeside Crown Hotel,3.0,budget,"Balcony,Jacuzzi,Dry Cleaning,Bike Rental,Free WiFi",30
+HOTEL_019,CITY_027,Corporate Plaza Resort,4.0,budget,"Hot Tub,Car Rental,Tour Desk,Balcony,Waterfront,Room Service",57
+HOTEL_020,CITY_035,Lakeside Royal Hotel,5.0,luxury,"Rooftop Bar,Coffee Maker,Dry Cleaning,Tennis Court,Hotel,Deluxe",66
+HOTEL_021,CITY_047,Business Royal Resort,3.5,budget,"Buffet,4 Star,Water Sports,Economy,Terrace,Playground",-4
+HOTEL_022,CITY_019,Ultimate Plaza Resort,4.0,budget,"Meditation Area,Conference Facilities,Fax Service,Financial District,Full Board,Golf Course",72
+HOTEL_023,CITY_002,Premium Crown Hotel,1.5,luxury,"Babysitting,Beach Access,Entertainment District,Water Sports,Hostel,Yoga Classes",33
+HOTEL_024,CITY_012,Nature Plaza Hotel,3.0,budget,"Non Smoking,Scenic Location,Garden,Airport Nearby",3
+HOTEL_025,CITY_016,Dawn Plaza Resort,2.5,luxury,"Child Friendly,Buffet,Indoor Pool,Inn,Library",30
+HOTEL_026,CITY_049,Dawn Heights Resort,3.0,luxury,"Mini Bar,Non Smoking,Meeting Rooms,All Inclusive,Business Center,24 Hour Dining",62
+HOTEL_027,CITY_043,Waterfront Plaza Hotel,3.5,budget,"Water Sports,Breakfast Included,Smoking Allowed",-3
+HOTEL_028,CITY_022,Panorama Executive Suites,4.5,mid,"Room Service,Indoor Activities,Mini Bar,Shopping District",20
+HOTEL_029,CITY_048,Boutique Crown Hotel,3.0,mid,"Game Room,Full Board,Pool Service,Mid-Range",174
+HOTEL_030,CITY_035,Artisan Heights Hotel,4.5,budget,"Jacuzzi,Rooftop Bar,Babysitting",213
+HOTEL_031,CITY_041,Downtown Crown Resort,4.5,luxury,"Pet Friendly,Scenic Location,Outdoor Pool,Valet Parking,Beach Service,Luxury",-24
+HOTEL_032,CITY_016,Nature Crown Resort,4.0,luxury,"Beach Service,Air Conditioning,Garden View,Business Lounge,Buffet,Indoor Pool",-10
+HOTEL_033,CITY_044,Mountain Plaza Resort,5.0,luxury,"Accessible,Valet Parking,Pet Friendly,Beach Service",46
+HOTEL_034,CITY_023,Riverside Royal Resort,4.5,luxury,"Mountain View,Laundry Service,Water Sports,Golf Course,Half Board,Airport Nearby",173
+HOTEL_035,CITY_036,Ultimate Royal Hotel,3.5,luxury,"Financial District,Quiet Area,A la Carte,Inn,4 Star",-4
+HOTEL_036,CITY_037,Royal Elite Resort,3.5,mid,"Indoor Pool,Boardroom,Shopping District,Minibar,City Center",49
+HOTEL_037,CITY_034,Premier Crown Resort,4.5,luxury,"USB Charging,Terrace,Train Station Nearby,City View,Laundry Service",67
+HOTEL_038,CITY_012,Supreme Crown Resort,4.0,luxury,"Inn,Printing Services,Translation Services,Yoga Classes,Phone,4 Star",64
+HOTEL_039,CITY_015,Marina Royal Resort,3.0,luxury,"Phone,Kitchenette,Financial District,Tennis Court,Laundry Service",69
+HOTEL_040,CITY_010,Tropical Royal Hotel,3.0,budget,"Massage,Train Station Nearby,High Speed Internet,Business Lounge,Fitness Center",91
+HOTEL_041,CITY_033,Nature Crown Resort,3.0,mid,"Ski In Ski Out,Motel,Premium,Jacuzzi,Outdoor Pool,Business Center",-3
+HOTEL_042,CITY_022,Designer Crown Hotel,3.5,budget,"Restaurant,Hotel,Early Check In,Translation Services,Deluxe,Airport Transfer",183
+HOTEL_043,CITY_031,Tropical Heights Hotel,3.0,luxury,"Beachfront,USB Charging,Garden,5 Star,Outdoor Pool,Tour Desk",37
+HOTEL_044,CITY_023,Garden Plaza Resort,3.0,mid,"Family Rooms,Fireplace,Business Hotel,Tour Desk,Coffee Maker,Outdoor Activities",87
+HOTEL_045,CITY_047,Elite Plaza Hotel,3.0,luxury,"Mid-Range,Coffee Maker,Pool Service,Premium",-14
+HOTEL_046,CITY_045,Dune Heights Hotel,3.5,luxury,"Terrace,Secretarial Services,Meditation Area,Resort,Airport Transfer,Minibar",16
+HOTEL_047,CITY_008,Oasis Heights Resort,3.0,budget,"Indoor Activities,City Center,A la Carte,Minibar,Garden",52
+HOTEL_048,CITY_001,Stylish Royal Resort,4.5,mid,"Water Sports,Heated Pool,Tour Desk,Extended Stay,City Center,USB Charging",-16
+HOTEL_049,CITY_007,Midtown Crown Hotel,2.5,budget,"4 Star,Economy,3 Star",81
+HOTEL_050,CITY_004,Midtown Central Suites,5.0,budget,"Presentation Equipment,Printing Services,Car Rental,Quiet Area",54
+HOTEL_051,CITY_016,Ultimate Central Suites,3.5,luxury,"Deluxe,24 Hour Dining,Hotel",12
+HOTEL_052,CITY_048,Forest Royal Resort,4.5,mid,"Late Check Out,Valet Parking,Translation Services,Shared Bathroom,Standard",5
+HOTEL_053,CITY_039,Executive Heights Hotel,3.5,luxury,"Tour Desk,Historic District,Economy,Fireplace,Executive Floor",125
+HOTEL_054,CITY_010,Downtown Plaza Hotel,3.5,mid,"Game Room,Airport Transfer,Connecting Rooms,Smart TV",4
+HOTEL_055,CITY_043,Nature Plaza Hotel,3.5,mid,"Massage,Beachfront,Beach Access,Business Hotel,Coffee Maker",5
+HOTEL_056,CITY_040,Business Heights Hotel,3.0,luxury,"Business Hotel,Safe,Buffet",77
+HOTEL_057,CITY_029,Sahara Heights Hotel,3.0,luxury,"Terrace Dining,Deluxe,Garden,Shared Bathroom,Executive Floor",83
+HOTEL_058,CITY_019,Mirage Royal Resort,2.5,budget,"5 Star,Entertainment District,City Center,Non Smoking",14
+HOTEL_059,CITY_044,Mountain Royal Hotel,3.5,mid,"Coffee Maker,Economy,Late Check Out,Non Smoking",10
+HOTEL_060,CITY_014,Executive Heights Hotel,2.0,luxury,"Presentation Equipment,Fax Service,In-Room Dining,City Center,Non Smoking",77
+HOTEL_061,CITY_042,Marina Heights Hotel,4.0,mid,"24 Hour Dining,Terrace,Business Hotel,Concierge,Garden",60
+HOTEL_062,CITY_050,Artisan Heights Hotel,4.5,mid,"Terrace,Mid-Range,Ticket Service,Mini Bar",6
+HOTEL_063,CITY_006,Green Plaza Hotel,3.5,mid,"Garden View,Mini Bar,Restaurant,Non Smoking,24 Hour Dining",339
+HOTEL_064,CITY_043,Boutique Plaza Hotel,1.0,mid,"24 Hour Dining,Shared Bathroom,Outdoor Activities",2
+HOTEL_065,CITY_037,Stylish Crown Hotel,3.0,luxury,"Luxury,Meditation Area,Air Conditioning",100
+HOTEL_066,CITY_002,Mirage Plaza Hotel,4.5,mid,"A la Carte,Water Sports,Car Rental",97
+HOTEL_067,CITY_026,Peak Heights Hotel,3.0,mid,"Business Lounge,Outdoor Pool,Waterfront",49
+HOTEL_068,CITY_011,Ridge Heights Hotel,4.0,mid,"Hostel,Secretarial Services,Fax Service,Continental Breakfast",-16
+HOTEL_069,CITY_013,Panorama Plaza Resort,3.0,budget,"24 Hour Dining,Refrigerator,Ocean View,Conference Facilities,Accessible,Beachfront",-28
+HOTEL_070,CITY_049,Supreme Executive Suites,1.5,luxury,"Resort,Translation Services,USB Charging,Historic District,Game Room",34
+HOTEL_071,CITY_049,Paradise Plaza Resort,3.5,mid,"Suite Hotel,Early Check In,Bluetooth Speaker,Child Friendly,Cable TV,Accessible",8
+HOTEL_072,CITY_014,Island Royal Resort,3.0,budget,"Indoor Activities,Outdoor Activities,Bar,Inn,Indoor Pool,Airport Nearby",57
+HOTEL_073,CITY_005,Ridge Heights Hotel,3.0,luxury,"Mid-Range,Boardroom,Laundry Service,Economy",36
+HOTEL_074,CITY_012,Panorama Plaza Resort,4.0,budget,"3 Star,Game Room,Deluxe",-27
+HOTEL_075,CITY_034,Prestige Crown Resort,3.5,luxury,"Bike Rental,Mini Bar,Refrigerator,Jacuzzi,Fitness Center",951
+HOTEL_076,CITY_023,Majestic Plaza Resort,4.0,luxury,"Motel,Conference Facilities,Printing Services,Laundry Service,Babysitting",197
+HOTEL_077,CITY_008,Vista Elite Suites,3.5,mid,"Free WiFi,Family Rooms,Early Check In,3 Star",75
+HOTEL_078,CITY_026,Island Plaza Hotel,3.5,mid,"Steam Room,Non Smoking,Smart TV",7
+HOTEL_079,CITY_033,Panorama Plaza Hotel,1.5,budget,"Fax Service,Ticket Service,Jacuzzi",47
+HOTEL_080,CITY_036,Luxury Plaza Hotel,4.0,mid,"Wellness Center,Golf Course,Air Conditioning,Continental Breakfast",72
+HOTEL_081,CITY_016,Panorama Plaza Hotel,3.5,luxury,"Meeting Rooms,Wellness Center,Train Station Nearby",-6
+HOTEL_082,CITY_003,Prestige Crown Resort,3.0,mid,"Garden,A la Carte,Phone,Pet Friendly",50
+HOTEL_083,CITY_039,Summit Heights Resort,1.5,mid,"Fireplace,Library,Swimming Pool,Air Conditioning,Suite Hotel,Private Bathroom",51
+HOTEL_084,CITY_023,Professional Crown Hotel,3.5,budget,"Jacuzzi,Mini Bar,Bar,Early Check In,Golf Course,Fireplace",8
+HOTEL_085,CITY_026,Garden Crown Resort,3.5,mid,"24 Hour Dining,Early Check In,Valet Parking,Indoor Pool",112
+HOTEL_086,CITY_004,Professional Plaza Resort,4.5,luxury,"Massage,Jacuzzi,Half Board",167
+HOTEL_087,CITY_045,Artisan Crown Resort,4.0,mid,"Historic District,Waterfront,Business Center",2
+HOTEL_088,CITY_047,Alpine Crown Hotel,3.0,luxury,"3 Star,Translation Services,Mini Bar,Playground,Laundry Service",-5
+HOTEL_089,CITY_033,Royal Plaza Hotel,5.0,luxury,"Work Desk,Fireplace,Half Board",15
+HOTEL_090,CITY_015,Majestic Plaza Resort,4.0,luxury,"Balcony,All Inclusive,Continental Breakfast,Inn,Conference Facilities",19
+HOTEL_091,CITY_043,Park Crown Hotel,4.0,budget,"Ski In Ski Out,Lodge,Kitchenette,Refrigerator,Mini Bar",307
+HOTEL_092,CITY_027,Seaside Royal Resort,2.5,mid,"Safe,Meditation Area,A la Carte",80
+HOTEL_093,CITY_047,Designer Royal Hotel,3.5,luxury,"Shared Bathroom,Presentation Equipment,Jacuzzi,In-Room Dining",94
+HOTEL_094,CITY_014,Peak Crown Resort,4.0,mid,"Heating,Jacuzzi,Meditation Area,Presentation Equipment",92
+HOTEL_095,CITY_032,Downtown Royal Hotel,3.0,mid,"Budget,Economy,Executive Floor,Tennis Court",9
+HOTEL_096,CITY_005,Professional Crown Hotel,4.0,mid,"Premium,Restaurant,Boardroom,Shared Bathroom,Terrace Dining,Smoking Allowed",78
+HOTEL_097,CITY_013,Tropical Crown Resort,4.0,mid,"Kids Club,Hotel,Quiet Area,Airport Nearby",62
+HOTEL_098,CITY_021,Boutique Plaza Hotel,4.5,mid,"Heating,Air Conditioning,A la Carte,Dry Cleaning",24
+HOTEL_099,CITY_002,Dawn Heights Resort,3.0,budget,"Fitness Center,Steam Room,Meeting Rooms,In-Room Dining",141
+HOTEL_100,CITY_011,Elite Central Hotel,3.0,mid,"Car Rental,Extended Stay,Early Check In,Balcony,Mini Bar",66
+HOTEL_101,CITY_021,Ocean Royal Hotel,2.0,luxury,"3 Star,Phone,Refrigerator",32
+HOTEL_102,CITY_043,Midtown Plaza Resort,4.5,mid,"Smoking Allowed,Shared Bathroom,5 Star,Airport Transfer,Fireplace",-4
+HOTEL_103,CITY_003,Sunrise Royal Hotel,3.0,mid,"Indoor Pool,Room Service,Inn,City View,Coffee Maker",30
+HOTEL_104,CITY_033,Mountain Heights Hotel,3.0,budget,"Meditation Area,Hotel,Conference Facilities,Extended Stay,Terrace",78
+HOTEL_105,CITY_030,Elite Central Hotel,2.5,luxury,"Spa,Fireplace,Rooftop Bar",-15
+HOTEL_106,CITY_012,Horizon Royal Hotel,3.5,luxury,"Secretarial Services,Child Friendly,Quiet Area",23
+HOTEL_107,CITY_025,Waterfront Elite Hotel,3.5,budget,"Pool Bar,Conference Facilities,Playground",88
+HOTEL_108,CITY_020,Boutique Crown Hotel,3.0,budget,"Child Friendly,Bluetooth Speaker,Shared Bathroom,Financial District,High Speed Internet",72
+HOTEL_109,CITY_046,Garden Plaza Resort,3.0,budget,"Continental Breakfast,Ocean View,Indoor Pool,Tour Desk",-7
+HOTEL_110,CITY_040,Elite Crown Hotel,4.0,mid,"Mid-Range,Garden View,Tennis Court",-2
+HOTEL_111,CITY_049,Prestige Heights Hotel,4.0,mid,"Extended Stay,Hostel,Dry Cleaning,Beach Service,Kids Club",30
+HOTEL_112,CITY_019,Luxury Royal Resort,3.0,mid,"Garden,Phone,A la Carte,Playground,3 Star",38
+HOTEL_113,CITY_011,Supreme Crown Resort,2.0,mid,"All Inclusive,Ski In Ski Out,Kids Club,Terrace",230
+HOTEL_114,CITY_040,Luxury Heights Hotel,4.5,mid,"Indoor Activities,Mountain View,In-Room Dining,Extended Stay,Continental Breakfast",34
+HOTEL_115,CITY_024,Commerce Royal Hotel,3.5,mid,"Entertainment District,Shared Bathroom,Meditation Area",163
+HOTEL_116,CITY_008,Stylish Heights Resort,4.5,luxury,"Refrigerator,Buffet,Half Board",69
+HOTEL_117,CITY_047,Imperial Palace Hotel,3.0,budget,"Pool Service,High Speed Internet,Meditation Area",69
+HOTEL_118,CITY_020,Prestige Heights Hotel,4.0,budget,"Pool Service,Library,Balcony,Bike Rental,Minibar",83
+HOTEL_119,CITY_037,Luxury Crown Hotel,4.0,budget,"Kitchenette,Economy,Laundry Service,Refrigerator",33
+HOTEL_120,CITY_009,Palm Crown Hotel,2.5,budget,"Non Smoking,Jacuzzi,Fitness Center",107
+HOTEL_121,CITY_041,Sahara Royal Resort,5.0,budget,"Family Rooms,Fitness Center,All Inclusive,Beach Service,Hotel,Restaurant",84
+HOTEL_122,CITY_011,Premier Plaza Hotel,3.0,luxury,"Buffet,Financial District,Entertainment District",22
+HOTEL_123,CITY_029,Peak Plaza Hotel,4.5,mid,"All Inclusive,Deluxe,Boardroom,Dry Cleaning,Secretarial Services",18
+HOTEL_124,CITY_024,Premium Heights Hotel,3.5,luxury,"Massage,Jacuzzi,Accessible",12
+HOTEL_125,CITY_038,Sunset Elite Suites,4.0,budget,"Work Desk,Budget,Phone,Ocean View,Connecting Rooms",54
+HOTEL_126,CITY_028,Paradise Plaza Resort,4.0,budget,"Quiet Area,Heated Pool,Connecting Rooms,Airport Transfer,Refrigerator,Garden",50
+HOTEL_127,CITY_007,Seaside Heights Resort,4.0,budget,"Fitness Center,Business Lounge,Deluxe,Hostel",-27
+HOTEL_128,CITY_006,Marina Crown Hotel,4.0,budget,"Shared Bathroom,Indoor Activities,Half Board",56
+HOTEL_129,CITY_038,Premier Plaza Hotel,3.5,budget,"Meditation Area,Historic District,Air Conditioning,Entertainment District,5 Star",177
+HOTEL_130,CITY_048,Garden Plaza Resort,2.5,budget,"Indoor Activities,Inn,Fitness Center,Early Check In,Free WiFi,Conference Facilities",-10
+HOTEL_131,CITY_036,Commerce Crown Resort,3.0,luxury,"Motel,Tennis Court,Full Board,Library",269
+HOTEL_132,CITY_019,Nature Heights Hotel,3.0,budget,"Dry Cleaning,Ocean View,Garden,Room Service,Smart TV,Meditation Area",58
+HOTEL_133,CITY_005,Riverside Plaza Hotel,2.5,mid,"Concierge,Rooftop Bar,Waterfront,Buffet,24 Hour Dining",-17
+HOTEL_134,CITY_016,Professional Plaza Resort,4.5,mid,"Smoking Allowed,Non Smoking,Sauna,Entertainment District,Airport Nearby,Hotel",36
+HOTEL_135,CITY_040,Central Crown Hotel,3.0,luxury,"Shared Bathroom,Smart TV,Yoga Classes,Hot Tub",32
+HOTEL_136,CITY_049,Oasis Crown Hotel,4.5,mid,"Steam Room,Bike Rental,Hostel,3 Star,Garden View",75
+HOTEL_137,CITY_042,Boutique Royal Resort,4.5,luxury,"Standard,Meeting Rooms,Extended Stay",64
+HOTEL_138,CITY_047,Executive Royal Resort,3.5,mid,"Motel,Airport Nearby,Tennis Court,Business Lounge",51
+HOTEL_139,CITY_023,Business Crown Hotel,3.5,budget,"Entertainment District,Extended Stay,Babysitting,Tennis Court",7
+HOTEL_140,CITY_037,Commerce Plaza Hotel,3.0,budget,"Tour Desk,Golf Course,Sauna",247
+HOTEL_141,CITY_031,Premier Royal Resort,4.0,mid,"Steam Room,Outdoor Activities,Standard",55
+HOTEL_142,CITY_016,Midtown Heights Resort,2.5,budget,"Train Station Nearby,Waterfront,Meditation Area,Room Service,Secretarial Services",190
+HOTEL_143,CITY_023,Marina Heights Hotel,2.5,budget,"Resort,Executive Floor,Outdoor Activities,Fireplace",-12
+HOTEL_144,CITY_034,Corporate Heights Hotel,3.5,budget,"5 Star,Air Conditioning,Breakfast Included",34
+HOTEL_145,CITY_016,Grand Central Hotel,3.5,mid,"Indoor Activities,Executive Floor,Massage,Beachfront,Shared Bathroom",108
+HOTEL_146,CITY_002,Designer Royal Hotel,2.5,mid,"City View,Heated Pool,Kids Club,Entertainment District,Waterfront",30
+HOTEL_147,CITY_003,Sunrise Plaza Hotel,3.5,luxury,"Luxury,Smoking Allowed,Spa,Resort,Fitness Center",483
+HOTEL_148,CITY_004,Luxury Plaza Hotel,4.0,budget,"Translation Services,Secretarial Services,3 Star,Early Check In,Car Rental",0
+HOTEL_149,CITY_034,Paradise Royal Hotel,4.0,budget,"Smart TV,Mini Bar,Kids Club,Refrigerator,Tour Desk",41
+HOTEL_150,CITY_043,Dawn Royal Suites,4.5,luxury,"High Speed Internet,Business Center,Rooftop Bar,Heated Pool,Outdoor Activities",45
+HOTEL_151,CITY_023,Grand Crown Resort,4.5,mid,"Playground,Ocean View,Swimming Pool,Kitchenette,Babysitting",210
+HOTEL_152,CITY_013,Nature Crown Resort,5.0,budget,"Connecting Rooms,Budget,Family Rooms,Suite Hotel,Valet Parking",114
+HOTEL_153,CITY_031,Coastal Crown Resort,1.0,budget,"Presentation Equipment,Ocean View,Heated Pool,Half Board,Fax Service",43
+HOTEL_154,CITY_049,Royal Heights Resort,3.5,mid,"Kids Club,Jacuzzi,Motel,Financial District,All Inclusive",77
+HOTEL_155,CITY_038,Dawn Plaza Resort,3.5,budget,"Garden,Train Station Nearby,Outdoor Pool",49
+HOTEL_156,CITY_011,Dune Heights Hotel,3.5,mid,"Swimming Pool,Hotel,Inn,Bike Rental",54
+HOTEL_157,CITY_025,Stylish Plaza Resort,3.5,budget,"Ticket Service,24 Hour Dining,Entertainment District,Shared Bathroom",63
+HOTEL_158,CITY_005,Riverside Royal Resort,3.0,mid,"Library,Conference Facilities,Beach Access,Entertainment District,Laundry Service",1
+HOTEL_159,CITY_035,Premier Crown Resort,2.5,mid,"Refrigerator,Breakfast Included,All Inclusive,Half Board",101
+HOTEL_160,CITY_043,Lagoon Heights Hotel,4.0,luxury,"Cable TV,Water Sports,Scenic Location,Mountain View,USB Charging,Golf Course",88
+HOTEL_161,CITY_033,Elite Central Hotel,3.0,mid,"Indoor Pool,Game Room,Kids Club,Coffee Maker,Breakfast Included",99
+HOTEL_162,CITY_016,Sunset Royal Resort,3.5,mid,"Mid-Range,Mini Bar,Luxury,Presentation Equipment,Sauna",28
+HOTEL_163,CITY_043,Midtown Royal Hotel,3.0,budget,"Work Desk,Waterfront,Pool Bar,Air Conditioning,Room Service,Ticket Service",75
+HOTEL_164,CITY_005,Lakeside Royal Suites,2.0,luxury,"Concierge,5 Star,Full Board,Beach Access",58
+HOTEL_165,CITY_041,Garden Heights Hotel,3.0,mid,"Rooftop Bar,Scenic Location,Heating,Business Center,Library",109
+HOTEL_166,CITY_028,Premier Heights Hotel,4.0,luxury,"Shared Bathroom,Translation Services,Meditation Area,Beach Access",66
+HOTEL_167,CITY_031,Designer Crown Hotel,3.0,budget,"Playground,Swimming Pool,Printing Services,Translation Services,Laundry Service,Ocean View",70
+HOTEL_168,CITY_011,Garden Royal Hotel,1.5,mid,"Child Friendly,Motel,Deluxe,Fax Service",39
+HOTEL_169,CITY_045,Forest Plaza Resort,4.0,mid,"Business Center,Business Hotel,Beachfront",61
+HOTEL_170,CITY_014,Mirage Royal Resort,3.0,luxury,"Jacuzzi,Shared Bathroom,Indoor Activities,Fireplace",82
+HOTEL_171,CITY_011,Sunrise Heights Hotel,3.0,luxury,"Accessible,City View,Garden,Indoor Activities,Hotel,24 Hour Dining",192
+HOTEL_172,CITY_013,Designer Crown Hotel,3.5,mid,"Cable TV,Shopping District,Heated Pool,Yoga Classes",133
+HOTEL_173,CITY_007,Skyline Heights Resort,3.0,mid,"Economy,Library,Minibar",-3
+HOTEL_174,CITY_019,Commerce Plaza Hotel,4.0,mid,"Secretarial Services,Translation Services,Hot Tub,24 Hour Dining,Airport Transfer,3 Star",63
+HOTEL_175,CITY_019,Ultimate Royal Hotel,2.0,luxury,"Beachfront,Boutique Hotel,Buffet,Phone",1
+HOTEL_176,CITY_022,Grand Royal Hotel,3.0,luxury,"Mountain View,Smart TV,Kitchenette",61
+HOTEL_177,CITY_037,Grand Royal Hotel,4.0,luxury,"Free WiFi,High Speed Internet,Extended Stay,Non Smoking,Ski In Ski Out",98
+HOTEL_178,CITY_048,Marina Heights Hotel,3.0,mid,"Swimming Pool,Bike Rental,Business Lounge,Babysitting",11
+HOTEL_179,CITY_022,Sunset Heights Hotel,4.5,mid,"Economy,Car Rental,Kitchenette,Fax Service",19
+HOTEL_180,CITY_026,Island Crown Hotel,4.0,budget,"Bluetooth Speaker,Indoor Pool,Coffee Maker,Deluxe,Spa",49
+HOTEL_181,CITY_008,Chic Royal Hotel,3.0,mid,"Smart TV,Bar,Coffee Maker,Laundry Service,Dry Cleaning,Connecting Rooms",67
+HOTEL_182,CITY_014,Downtown Crown Resort,3.0,budget,"Fax Service,Tennis Court,Standard,Buffet,Economy",33
+HOTEL_183,CITY_031,Horizon Plaza Resort,2.0,budget,"Balcony,Airport Transfer,Business Hotel,Early Check In",127
+HOTEL_184,CITY_038,Stylish Heights Resort,4.0,budget,"Presentation Equipment,Entertainment District,Outdoor Pool,Restaurant",34
+HOTEL_185,CITY_026,Midtown Central Suites,3.0,budget,"24 Hour Dining,Late Check Out,Premium,Kitchenette,Secretarial Services",-18
+HOTEL_186,CITY_043,Paradise Crown Hotel,5.0,budget,"Library,Mini Bar,Steam Room",56
+HOTEL_187,CITY_009,Ultimate Heights Resort,5.0,mid,"Air Conditioning,Child Friendly,City Center,Jacuzzi,Beachfront",80
+HOTEL_188,CITY_047,Oasis Royal Hotel,2.0,luxury,"Beach Access,Hostel,Terrace,Smart TV,4 Star",98
+HOTEL_189,CITY_041,Tropical Royal Hotel,4.5,mid,"Standard,Steam Room,Swimming Pool",122
+HOTEL_190,CITY_002,Chic Heights Hotel,2.5,luxury,"Translation Services,Executive Floor,In-Room Dining",122
+HOTEL_191,CITY_036,Ultimate Heights Resort,3.5,luxury,"Translation Services,Family Rooms,Boardroom,Phone",103
+HOTEL_192,CITY_027,Midtown Crown Hotel,2.5,budget,"Restaurant,Suite Hotel,Garden,Shared Bathroom,Heated Pool,Golf Course",85
+HOTEL_193,CITY_008,Sunrise Plaza Resort,4.0,budget,"Boardroom,Resort,Wellness Center,Spa Services,Waterfront,Beach Service",-19
+HOTEL_194,CITY_012,Luxury Crown Hotel,3.5,luxury,"Secretarial Services,Lodge,Mountain View",44
+HOTEL_195,CITY_050,Palm Heights Hotel,4.0,budget,"Dry Cleaning,Scenic Location,Presentation Equipment,Private Bathroom,Concierge",-2
+HOTEL_196,CITY_024,Paradise Heights Resort,4.5,mid,"Indoor Activities,Suite Hotel,Concierge,Meeting Rooms,Extended Stay,Continental Breakfast",16
+HOTEL_197,CITY_050,Nature Heights Hotel,2.5,budget,"Tour Desk,Rooftop Bar,Motel",304
+HOTEL_198,CITY_029,Imperial Palace Hotel,3.5,budget,"Tour Desk,Beach Access,Fax Service",6
+HOTEL_199,CITY_030,Riverside Heights Hotel,4.5,luxury,"Private Bathroom,Yoga Classes,Dry Cleaning,USB Charging,Printing Services,Continental Breakfast",95
+HOTEL_200,CITY_036,Green Crown Hotel,4.0,luxury,"Presentation Equipment,Wellness Center,Pool Service,Beach Access,Scenic Location,Concierge",1
+HOTEL_201,CITY_037,Central Royal Resort,3.0,mid,"USB Charging,Sauna,5 Star,Printing Services,Connecting Rooms",266
+HOTEL_202,CITY_027,Ocean Plaza Resort,3.5,luxury,"Airport Nearby,Indoor Activities,Beach Service,Beach Access",100
+HOTEL_203,CITY_047,Regal Heights Hotel,3.5,luxury,"Outdoor Pool,Mini Bar,Fax Service,Presentation Equipment,Air Conditioning",13
+HOTEL_204,CITY_011,Vista Royal Suites,3.5,luxury,"Translation Services,Bluetooth Speaker,Premium",-7
+HOTEL_205,CITY_030,Horizon Plaza Resort,4.0,budget,"Scenic Location,Waterfront,Half Board,Boutique Hotel,Work Desk,Late Check Out",138
+HOTEL_206,CITY_031,Tropical Crown Resort,3.5,budget,"Early Check In,Yoga Classes,Ocean View",27
+HOTEL_207,CITY_027,Skyline Heights Resort,3.0,mid,"Garden View,Bluetooth Speaker,Spa,Ticket Service,Car Rental",-16
+HOTEL_208,CITY_008,Royal Executive Hotel,4.0,budget,"In-Room Dining,Business Lounge,Pet Friendly,Fitness Center",9
+HOTEL_209,CITY_015,Boutique Plaza Hotel,4.0,mid,"Shared Bathroom,Quiet Area,Pool Service,Cable TV,Deluxe",87
+HOTEL_210,CITY_027,Beach Royal Hotel,4.0,mid,"Pet Friendly,Historic District,A la Carte,Hostel,Bluetooth Speaker,Playground",4
+HOTEL_211,CITY_010,Lagoon Royal Resort,3.5,mid,"Smart TV,4 Star,Mountain View,Breakfast Included,Waterfront,Mini Bar",92
+HOTEL_212,CITY_020,Midtown Central Suites,4.0,luxury,"Smart TV,Business Hotel,Boutique Hotel",66
+HOTEL_213,CITY_025,Corporate Royal Hotel,3.5,mid,"Kids Club,Garden,Tour Desk,Cable TV",113
+HOTEL_214,CITY_041,Tropical Plaza Resort,4.5,mid,"Lodge,Fitness Center,Terrace Dining,Historic District,Rooftop Bar,Inn",73
+HOTEL_215,CITY_003,Mirage Plaza Hotel,3.0,mid,"Indoor Pool,Pet Friendly,Outdoor Activities,Bar",75
+HOTEL_216,CITY_042,Luxury Plaza Hotel,4.5,luxury,"Half Board,Bike Rental,Bluetooth Speaker",65
+HOTEL_217,CITY_017,Horizon Crown Resort,4.0,luxury,"Laundry Service,Tour Desk,Ticket Service",2
+HOTEL_218,CITY_017,Prestige Royal Hotel,3.5,budget,"Restaurant,Motel,Mini Bar",-4
+HOTEL_219,CITY_015,Artisan Plaza Resort,3.5,luxury,"Library,Yoga Classes,Bluetooth Speaker,Inn,Free WiFi,Rooftop Bar",69
+HOTEL_220,CITY_022,Park Royal Hotel,4.5,budget,"Executive Floor,Late Check Out,Coffee Maker,Mid-Range,Private Bathroom,Deluxe",93
+HOTEL_221,CITY_038,Seaside Crown Hotel,2.0,budget,"Refrigerator,Shared Bathroom,Phone",-13
+HOTEL_222,CITY_026,Designer Royal Hotel,3.5,mid,"Private Bathroom,Room Service,Scenic Location",25
+HOTEL_223,CITY_048,Premium Plaza Resort,4.0,mid,"Airport Transfer,Tour Desk,Bluetooth Speaker,Secretarial Services,Car Rental",-10
+HOTEL_224,CITY_037,Skyline Plaza Hotel,2.5,luxury,"Presentation Equipment,Extended Stay,A la Carte",45
+HOTEL_225,CITY_033,Premier Plaza Hotel,3.5,mid,"Meditation Area,Boardroom,Yoga Classes",2
+HOTEL_226,CITY_013,Central Crown Hotel,3.5,budget,"Accessible,Steam Room,Non Smoking",67
+HOTEL_227,CITY_023,Vista Elite Suites,4.5,luxury,"Printing Services,Tour Desk,Buffet",307
+HOTEL_228,CITY_045,Stylish Crown Hotel,3.0,mid,"Ocean View,Half Board,Minibar,Golf Course,Bluetooth Speaker",118
+HOTEL_229,CITY_021,Executive Crown Resort,4.0,luxury,"Beach Access,Bar,Concierge,Balcony,Spa Services,Swimming Pool",118
+HOTEL_230,CITY_005,Central Plaza Hotel,3.0,mid,"Financial District,Economy,Waterfront",31
+HOTEL_231,CITY_037,Downtown Executive Suites,1.5,luxury,"Pet Friendly,Boutique Hotel,Car Rental,Fireplace",121
+HOTEL_232,CITY_033,Vista Crown Hotel,4.5,luxury,"Concierge,Continental Breakfast,Terrace",-21
+HOTEL_233,CITY_011,Vista Plaza Resort,4.5,luxury,"Free WiFi,Economy,Spa Services,Safe",52
+HOTEL_234,CITY_027,Elite Crown Hotel,3.0,budget,"Car Rental,Financial District,Budget,Indoor Pool,High Speed Internet",47
+HOTEL_235,CITY_050,Waterfront Plaza Resort,5.0,mid,"Late Check Out,City Center,Yoga Classes,Indoor Activities,All Inclusive",16
+HOTEL_236,CITY_049,Business Heights Hotel,3.0,mid,"Hostel,Bluetooth Speaker,Concierge,Mini Bar",-8
+HOTEL_237,CITY_032,Panorama Executive Suites,3.5,budget,"Shared Bathroom,Hostel,Pool Bar,Fireplace",79
+HOTEL_238,CITY_025,Midtown Crown Hotel,3.5,budget,"Late Check Out,Shopping District,Printing Services,Presentation Equipment",345
+HOTEL_239,CITY_001,Vista Royal Hotel,3.0,luxury,"5 Star,A la Carte,Car Rental,Scenic Location",20
+HOTEL_240,CITY_004,Royal Plaza Hotel,4.5,budget,"Late Check Out,Fireplace,Kitchenette",23
+HOTEL_241,CITY_005,Nature Heights Hotel,3.0,mid,"Extended Stay,Boutique Hotel,Mid-Range",60
+HOTEL_242,CITY_045,Royal Heights Resort,4.0,mid,"Shared Bathroom,Spa,Motel,Meeting Rooms,Heating",49
+HOTEL_243,CITY_017,Ridge Heights Hotel,3.0,budget,"Deluxe,Massage,Secretarial Services,4 Star",14
+HOTEL_244,CITY_043,Beach Crown Hotel,1.0,luxury,"Connecting Rooms,4 Star,Private Bathroom,Hostel,Playground,Water Sports",19
+HOTEL_245,CITY_023,Imperial Crown Hotel,1.5,mid,"Accessible,Heating,Yoga Classes,Private Bathroom",99
+HOTEL_246,CITY_017,Midtown Royal Hotel,1.5,luxury,"Buffet,Game Room,A la Carte,Heating",75
+HOTEL_247,CITY_032,Supreme Heights Hotel,4.5,luxury,"Refrigerator,Business Center,Game Room,Economy,Wellness Center",36
+HOTEL_248,CITY_014,Deluxe Crown Hotel,4.0,budget,"Printing Services,Game Room,Laundry Service,Bike Rental,Refrigerator",59
+HOTEL_249,CITY_020,Horizon Crown Resort,4.0,luxury,"Hot Tub,Fireplace,Executive Floor,Terrace Dining",28
+HOTEL_250,CITY_019,Green Royal Resort,3.5,budget,"Tennis Court,Kitchenette,Child Friendly,Business Hotel",136
+HOTEL_251,CITY_019,Boutique Heights Hotel,4.5,mid,"Ticket Service,Balcony,Historic District",36
+HOTEL_252,CITY_011,Prestige Plaza Hotel,4.5,luxury,"Scenic Location,USB Charging,Translation Services",25
+HOTEL_253,CITY_001,Tropical Plaza Resort,4.0,mid,"Connecting Rooms,Dry Cleaning,Indoor Activities",55
+HOTEL_254,CITY_009,Dune Royal Resort,5.0,budget,"Business Lounge,Lodge,Inn,Conference Facilities",32
+HOTEL_255,CITY_048,Central Heights Hotel,4.5,luxury,"5 Star,Fax Service,Work Desk,Shared Bathroom,Bar",951
+HOTEL_256,CITY_005,Professional Royal Resort,4.5,budget,"Smart TV,Suite Hotel,Buffet,City View",54
+HOTEL_257,CITY_024,Regal Plaza Resort,4.0,luxury,"Massage,Outdoor Pool,Outdoor Activities",122
+HOTEL_258,CITY_019,Premium Crown Hotel,4.0,budget,"Heating,Accessible,Mountain View,Indoor Activities,Conference Facilities",484
+HOTEL_259,CITY_034,Mountain Heights Hotel,4.0,budget,"Budget,Business Hotel,Garden View,Meeting Rooms,Business Center",75
+HOTEL_260,CITY_003,Midtown Heights Resort,4.0,budget,"Entertainment District,Playground,Room Service,Breakfast Included,Kitchenette,Motel",33
+HOTEL_261,CITY_048,Premier Plaza Hotel,4.5,luxury,"Dry Cleaning,Smart TV,Private Bathroom,Entertainment District,Valet Parking,All Inclusive",29
+HOTEL_262,CITY_023,Premium Plaza Resort,3.5,luxury,"Financial District,Airport Transfer,Garden View,Garden,Budget,Historic District",120
+HOTEL_263,CITY_031,Summit Heights Resort,4.5,luxury,"Half Board,In-Room Dining,Financial District,Resort,Buffet,Smoking Allowed",61
+HOTEL_264,CITY_029,Coastal Crown Resort,4.0,luxury,"Heated Pool,Minibar,Concierge,Pool Bar,Laundry Service",76
+HOTEL_265,CITY_017,Stylish Royal Resort,3.0,mid,"Late Check Out,Refrigerator,Fireplace,Mid-Range",13
+HOTEL_266,CITY_046,Mirage Crown Hotel,4.0,luxury,"Game Room,Pet Friendly,3 Star",132
+HOTEL_267,CITY_008,Lagoon Plaza Hotel,3.0,mid,"Room Service,Secretarial Services,Hotel",75
+HOTEL_268,CITY_009,Regal Plaza Hotel,3.0,budget,"Connecting Rooms,Yoga Classes,Massage",0
+HOTEL_269,CITY_031,Marina Heights Hotel,4.5,mid,"Meditation Area,Boutique Hotel,Ski In Ski Out,Swimming Pool,Entertainment District,Hostel",7
+HOTEL_270,CITY_047,Waterfront Plaza Resort,4.0,mid,"Non Smoking,Pool Service,Terrace,Accessible,Motel",102
+HOTEL_271,CITY_020,Designer Royal Hotel,4.0,mid,"Luxury,Free WiFi,Room Service,Premium,Concierge",114
+HOTEL_272,CITY_047,Lakeside Royal Suites,3.5,luxury,"Standard,Buffet,Free WiFi,Kitchenette,Balcony,Ticket Service",39
+HOTEL_273,CITY_019,Seaside Heights Resort,4.5,mid,"Financial District,In-Room Dining,Train Station Nearby,Beachfront,Business Hotel,Economy",95
+HOTEL_274,CITY_045,Marina Royal Resort,2.5,mid,"Hot Tub,Executive Floor,Lodge,Motel",147
+HOTEL_275,CITY_041,Deluxe Heights Resort,3.5,mid,"Valet Parking,3 Star,Conference Facilities,Ticket Service,Outdoor Activities",4
+HOTEL_276,CITY_041,Horizon Heights Hotel,4.5,mid,"Executive Floor,Library,Buffet,Wellness Center,Work Desk",32
+HOTEL_277,CITY_009,Horizon Plaza Resort,2.5,budget,"In-Room Dining,Babysitting,Secretarial Services,Full Board,Minibar,Terrace Dining",44
+HOTEL_278,CITY_046,Horizon Plaza Resort,2.0,luxury,"Kitchenette,High Speed Internet,Steam Room,Massage,Economy,Balcony",57
+HOTEL_279,CITY_044,Peak Royal Resort,4.5,budget,"Heating,Beach Access,Executive Floor,Balcony,Deluxe",28
+HOTEL_280,CITY_040,Supreme Crown Resort,4.0,mid,"Ski In Ski Out,Premium,Beach Service,Room Service",-2
+HOTEL_281,CITY_016,Midtown Crown Hotel,4.0,luxury,"Garden View,Ski In Ski Out,Hotel,Mountain View,Suite Hotel",2
+HOTEL_282,CITY_022,Mountain Crown Resort,4.5,luxury,"Water Sports,Garden View,Scenic Location,Dry Cleaning,Inn",24
+HOTEL_283,CITY_011,Summit Crown Hotel,1.5,luxury,"Spa Services,Full Board,Bar",-7
+HOTEL_284,CITY_005,Island Crown Hotel,3.0,mid,"Indoor Pool,5 Star,Terrace Dining,Boardroom,City View,Shared Bathroom",976
+HOTEL_285,CITY_027,Vista Royal Suites,4.0,luxury,"Airport Nearby,Translation Services,Bar,Outdoor Pool,Terrace Dining,Safe",42
+HOTEL_286,CITY_024,Nature Royal Resort,3.5,budget,"Business Hotel,Shopping District,Free WiFi,Scenic Location",25
+HOTEL_287,CITY_038,Park Royal Hotel,3.0,mid,"Resort,Breakfast Included,Ocean View",47
+HOTEL_288,CITY_003,Desert Plaza Resort,4.0,budget,"Outdoor Pool,Luxury,All Inclusive",67
+HOTEL_289,CITY_008,Mountain Crown Resort,5.0,luxury,"Wellness Center,Entertainment District,Non Smoking,Late Check Out",50
+HOTEL_290,CITY_007,Royal Plaza Resort,4.0,budget,"Hot Tub,Refrigerator,Concierge,Executive Floor,Massage,Balcony",270
+HOTEL_291,CITY_009,Downtown Crown Resort,4.5,mid,"Motel,Car Rental,In-Room Dining",169
+HOTEL_292,CITY_048,Artisan Royal Resort,4.0,luxury,"5 Star,Resort,Tour Desk,Free WiFi,Ticket Service",77
+HOTEL_293,CITY_026,Ultimate Plaza Resort,3.5,luxury,"Smart TV,Business Hotel,Bar,Luxury,Entertainment District",80
+HOTEL_294,CITY_023,Tropical Royal Hotel,3.0,mid,"Work Desk,Inn,Pool Service,Boutique Hotel",13
+HOTEL_295,CITY_006,Imperial Palace Hotel,3.5,budget,"Bluetooth Speaker,Mountain View,Business Lounge,Luxury,Mini Bar,USB Charging",1037
+HOTEL_296,CITY_016,Beach Crown Hotel,3.0,luxury,"Massage,Dry Cleaning,In-Room Dining,Entertainment District,Air Conditioning,Economy",47
+HOTEL_297,CITY_048,Professional Crown Hotel,3.5,budget,"Garden,Spa Services,Mini Bar,Pet Friendly",39
+HOTEL_298,CITY_039,Royal Central Resort,3.5,budget,"Meditation Area,Playground,Private Bathroom",49
+HOTEL_299,CITY_002,Oasis Plaza Resort,4.0,luxury,"Beach Access,Air Conditioning,Heating,Conference Facilities,Lodge",66
+HOTEL_300,CITY_013,Green Royal Resort,3.0,budget,"24 Hour Dining,Child Friendly,Smoking Allowed",51
+HOTEL_301,CITY_029,Sunrise Heights Hotel,4.5,mid,"Kids Club,Outdoor Activities,Fitness Center,Yoga Classes,Budget,5 Star",121
+HOTEL_302,CITY_027,Elite Crown Resort,3.0,luxury,"Hotel,Terrace,Dry Cleaning",33
+HOTEL_303,CITY_021,Marina Royal Resort,3.0,luxury,"Swimming Pool,Buffet,Air Conditioning,Golf Course",65
+HOTEL_304,CITY_019,Mountain Heights Hotel,3.0,budget,"City View,Playground,Deluxe,Meditation Area,Breakfast Included",204
+HOTEL_305,CITY_013,Imperial Heights Hotel,2.5,budget,"Balcony,Standard,Car Rental,Fax Service",33
+HOTEL_306,CITY_045,Summit Royal Resort,2.0,mid,"Presentation Equipment,Extended Stay,Valet Parking,Beach Access,Steam Room",23
+HOTEL_307,CITY_043,Riverside Crown Resort,3.0,budget,"Air Conditioning,Family Rooms,Heating,Indoor Pool",45
+HOTEL_308,CITY_027,Beach Royal Hotel,3.5,budget,"Pool Bar,Rooftop Bar,Game Room,Free WiFi",-4
+HOTEL_309,CITY_001,Elite Heights Hotel,4.0,luxury,"Quiet Area,Business Hotel,Game Room",47
+HOTEL_310,CITY_020,Dawn Royal Suites,4.0,mid,"Jacuzzi,Tennis Court,Premium,Coffee Maker,Balcony,Suite Hotel",81
+HOTEL_311,CITY_023,Desert Plaza Resort,4.0,mid,"Phone,Half Board,Suite Hotel",74
+HOTEL_312,CITY_040,Artisan Plaza Resort,3.5,luxury,"Buffet,Terrace Dining,Garden,Heated Pool,All Inclusive",71
+HOTEL_313,CITY_040,Grand Executive Suites,2.5,mid,"Terrace,Mid-Range,Tennis Court,Waterfront",33
+HOTEL_314,CITY_040,Ultimate Royal Hotel,4.5,mid,"Yoga Classes,Spa Services,Bluetooth Speaker,Train Station Nearby,Mid-Range,Private Bathroom",35
+HOTEL_315,CITY_002,Palm Crown Hotel,3.5,mid,"Jacuzzi,Hot Tub,Ski In Ski Out,Ticket Service,Bar",5
+HOTEL_316,CITY_017,Desert Heights Hotel,4.5,budget,"Beach Access,Airport Nearby,Full Board,Minibar,Garden View,Swimming Pool",58
+HOTEL_317,CITY_012,Desert Crown Resort,2.0,mid,"Premium,Rooftop Bar,Shared Bathroom,Fitness Center,Wellness Center,Business Center",-20
+HOTEL_318,CITY_044,Sahara Heights Hotel,3.5,budget,"Boutique Hotel,Pool Bar,A la Carte,5 Star,Premium,Dry Cleaning",-13
+HOTEL_319,CITY_024,Mountain Plaza Resort,4.5,mid,"Mountain View,Car Rental,All Inclusive,Boardroom,Continental Breakfast",51
+HOTEL_320,CITY_005,Royal Heights Resort,4.0,luxury,"Rooftop Bar,Economy,Resort,Luxury",21
+HOTEL_321,CITY_036,Professional Crown Hotel,3.5,budget,"Resort,Child Friendly,City View,Family Rooms,Rooftop Bar",70
+HOTEL_322,CITY_040,Green Crown Hotel,3.5,luxury,"Buffet,Playground,Fireplace,Car Rental,Outdoor Activities",2
+HOTEL_323,CITY_032,Royal Palace Resort,3.0,budget,"Accessible,Bar,3 Star,Restaurant,Swimming Pool,Quiet Area",189
+HOTEL_324,CITY_037,Panorama Executive Suites,4.0,budget,"Accessible,Entertainment District,Late Check Out,Secretarial Services,Restaurant,Mountain View",5
+HOTEL_325,CITY_046,Ocean Royal Hotel,4.0,budget,"Work Desk,Cable TV,Valet Parking,Beachfront,Buffet,Garden View",32
+HOTEL_326,CITY_025,Alpine Heights Resort,3.0,luxury,"Pool Service,Meditation Area,Shopping District",344
+HOTEL_327,CITY_016,Waterfront Crown Resort,2.5,budget,"Smoking Allowed,Library,3 Star,Waterfront,Outdoor Activities,Pool Bar",21
+HOTEL_328,CITY_021,Luxury Heights Hotel,2.5,luxury,"Waterfront,Work Desk,Financial District,Boutique Hotel,Budget,Swimming Pool",69
+HOTEL_329,CITY_007,Alpine Crown Hotel,5.0,budget,"Safe,Waterfront,Early Check In,A la Carte",-12
+HOTEL_330,CITY_045,Royal Crown Resort,3.5,luxury,"Budget,Motel,Yoga Classes,All Inclusive,Economy,Room Service",20
+HOTEL_331,CITY_036,Waterfront Executive Suites,3.5,luxury,"Child Friendly,Ticket Service,High Speed Internet,24 Hour Dining",76
+HOTEL_332,CITY_040,Horizon Royal Hotel,3.0,luxury,"Extended Stay,Private Bathroom,Conference Facilities,Mid-Range,Babysitting",30
+HOTEL_333,CITY_004,Forest Heights Hotel,4.5,mid,"In-Room Dining,Spa,Library,USB Charging,Jacuzzi,Pool Service",61
+HOTEL_334,CITY_020,Mirage Crown Hotel,4.0,budget,"Sauna,Laundry Service,Jacuzzi,Phone,Scenic Location,Mini Bar",-20
+HOTEL_335,CITY_027,Island Crown Hotel,4.5,mid,"Fitness Center,Resort,Motel,Executive Floor,5 Star",-15
+HOTEL_336,CITY_016,Ocean Heights Hotel,5.0,budget,"Hostel,Airport Nearby,Water Sports,All Inclusive",197
+HOTEL_337,CITY_045,Park Plaza Resort,2.5,mid,"Private Bathroom,Family Rooms,Restaurant,Quiet Area,Golf Course,Budget",369
+HOTEL_338,CITY_033,Chic Heights Hotel,3.5,budget,"Economy,Budget,Valet Parking,Mountain View",44
+HOTEL_339,CITY_043,Ultimate Royal Hotel,2.5,luxury,"A la Carte,Family Rooms,Wellness Center,Executive Floor,Shared Bathroom,Presentation Equipment",66
+HOTEL_340,CITY_041,Desert Plaza Resort,3.5,budget,"Printing Services,5 Star,Bar",6
+HOTEL_341,CITY_033,Horizon Plaza Resort,2.5,budget,"Non Smoking,Work Desk,Massage,Car Rental,Early Check In",81
+HOTEL_342,CITY_031,Ridge Royal Resort,4.0,budget,"Shared Bathroom,In-Room Dining,Buffet,Sauna,Breakfast Included",7
+HOTEL_343,CITY_016,Garden Heights Hotel,3.5,luxury,"Indoor Activities,All Inclusive,Valet Parking,Terrace Dining,Full Board",13
+HOTEL_344,CITY_017,Grand Executive Suites,3.5,mid,"Non Smoking,Conference Facilities,Water Sports,Indoor Pool,Car Rental",82
+HOTEL_345,CITY_041,Supreme Executive Suites,4.0,budget,"Steam Room,Waterfront,Spa Services,Fitness Center",73
+HOTEL_346,CITY_040,Premium Royal Hotel,3.5,luxury,"Terrace,Bar,Golf Course,Garden View,Car Rental,Accessible",23
+HOTEL_347,CITY_030,Premier Heights Hotel,4.0,luxury,"Air Conditioning,All Inclusive,Pool Bar,Half Board,Business Center",45
+HOTEL_348,CITY_028,Grand Executive Suites,3.5,luxury,"Jacuzzi,Ocean View,24 Hour Dining,Entertainment District,Meditation Area,Pet Friendly",86
+HOTEL_349,CITY_007,Executive Crown Resort,3.0,budget,"Balcony,Buffet,Breakfast Included,City View,Accessible,Half Board",83
+HOTEL_350,CITY_010,Central Plaza Hotel,3.0,mid,"Mountain View,Dry Cleaning,Cable TV,Spa Services,Financial District,Coffee Maker",41
+HOTEL_351,CITY_048,Green Heights Resort,3.5,budget,"In-Room Dining,Deluxe,Translation Services",38
+HOTEL_352,CITY_015,Waterfront Plaza Resort,4.0,luxury,"Waterfront,Cable TV,Balcony,Boardroom,Heated Pool,Indoor Pool",120
+HOTEL_353,CITY_024,Royal Elite Resort,3.0,budget,"Late Check Out,Spa,Tennis Court,Bar,Pool Bar,Game Room",26
+HOTEL_354,CITY_020,Lagoon Crown Resort,2.0,mid,"Pool Service,4 Star,Family Rooms",107
+HOTEL_355,CITY_009,Skyline Heights Resort,3.5,luxury,"Economy,Standard,Printing Services,Executive Floor",38
+HOTEL_356,CITY_045,Sunrise Crown Resort,3.0,luxury,"Ski In Ski Out,Suite Hotel,Secretarial Services,Work Desk,Ticket Service",74
+HOTEL_357,CITY_032,Boutique Royal Resort,2.5,budget,"Buffet,Car Rental,3 Star,Airport Nearby,Terrace Dining,Room Service",17
+HOTEL_358,CITY_041,Business Heights Hotel,4.0,luxury,"Water Sports,Train Station Nearby,Bluetooth Speaker,Beachfront,Shared Bathroom,Tour Desk",3
+HOTEL_359,CITY_014,Panorama Plaza Hotel,4.0,mid,"Smart TV,City View,Refrigerator,Ticket Service,Beach Access",36
+HOTEL_360,CITY_018,Skyline Central Hotel,4.5,luxury,"Hotel,Work Desk,City View,Financial District,Playground,Dry Cleaning",48
+HOTEL_361,CITY_010,Garden Crown Resort,4.0,budget,"Full Board,Babysitting,Printing Services",37
+HOTEL_362,CITY_014,Business Crown Hotel,3.0,luxury,"Wellness Center,A la Carte,Fax Service",84
+HOTEL_363,CITY_031,Luxury Crown Hotel,5.0,mid,"Cable TV,Boardroom,Outdoor Pool,A la Carte,Heated Pool",-17
+HOTEL_364,CITY_050,Vista Royal Suites,4.0,budget,"Breakfast Included,Lodge,24 Hour Dining,Indoor Pool,Smart TV",48
+HOTEL_365,CITY_043,Sunrise Crown Resort,3.5,mid,"Wellness Center,Dry Cleaning,Kids Club,Indoor Activities,Scenic Location,Early Check In",238
+HOTEL_366,CITY_026,Marina Crown Hotel,1.0,mid,"Spa,Golf Course,USB Charging,Garden View",21
+HOTEL_367,CITY_012,Executive Plaza Resort,3.5,luxury,"Phone,Swimming Pool,Jacuzzi,Hot Tub,Conference Facilities,Outdoor Pool",-14
+HOTEL_368,CITY_015,Majestic Heights Resort,5.0,budget,"Half Board,Balcony,Garden View,Mini Bar,Accessible,Terrace Dining",-11
+HOTEL_369,CITY_020,Sunset Plaza Hotel,3.0,mid,"Hostel,Beachfront,Yoga Classes,Bluetooth Speaker",8
+HOTEL_370,CITY_024,Panorama Royal Hotel,3.5,luxury,"Heated Pool,Luxury,Kitchenette,Conference Facilities",-2
+HOTEL_371,CITY_004,Elite Royal Hotel,4.0,budget,"Boardroom,Free WiFi,Bar",118
+HOTEL_372,CITY_018,Professional Heights Resort,3.0,budget,"Mountain View,Accessible,Meditation Area,Heating,Jacuzzi,Airport Transfer",40
+HOTEL_373,CITY_014,Grand Royal Suites,2.5,budget,"Family Rooms,City View,A la Carte,Scenic Location,Dry Cleaning,Shopping District",180
+HOTEL_374,CITY_041,Marina Heights Hotel,4.5,budget,"Ski In Ski Out,Kitchenette,Historic District,Buffet",-3
+HOTEL_375,CITY_024,Oasis Heights Resort,4.0,luxury,"Fitness Center,Private Bathroom,Standard,High Speed Internet,Non Smoking,4 Star",49
+HOTEL_376,CITY_006,Deluxe Royal Resort,3.0,mid,"Business Hotel,Tour Desk,Kids Club",2
+HOTEL_377,CITY_027,Riverside Elite Suites,4.5,luxury,"Lodge,Child Friendly,Tour Desk,Meeting Rooms,Coffee Maker",297
+HOTEL_378,CITY_012,Downtown Crown Resort,4.0,mid,"Balcony,Hot Tub,Bar,Pool Service,Fireplace,Connecting Rooms",16
+HOTEL_379,CITY_012,Lakeside Plaza Resort,3.5,mid,"Premium,Smart TV,Presentation Equipment,Bluetooth Speaker,Half Board,Financial District",1
+HOTEL_380,CITY_038,Lagoon Royal Resort,3.5,luxury,"Terrace,Golf Course,Extended Stay,Meditation Area",-7
+HOTEL_381,CITY_029,Palm Heights Hotel,3.5,budget,"Train Station Nearby,Ticket Service,Shopping District,Extended Stay,Bar,City View",4
+HOTEL_382,CITY_017,Commerce Crown Resort,1.5,mid,"Full Board,Heated Pool,Cable TV,Concierge,Smart TV,Safe",74
+HOTEL_383,CITY_019,Commerce Crown Resort,4.0,luxury,"Library,Hot Tub,Inn,Free WiFi,Tennis Court",88
+HOTEL_384,CITY_002,Lakeside Royal Hotel,2.5,luxury,"24 Hour Dining,Motel,Budget,3 Star,Laundry Service",1042
+HOTEL_385,CITY_047,Dawn Crown Hotel,3.5,mid,"Accessible,Budget,Mid-Range,Bar,Entertainment District,Outdoor Pool",531
+HOTEL_386,CITY_019,Grand Royal Suites,4.0,budget,"Airport Nearby,Shopping District,Dry Cleaning,Family Rooms",2
+HOTEL_387,CITY_025,Mirage Royal Resort,4.0,mid,"Bar,Outdoor Pool,High Speed Internet,Smart TV,Hostel",-16
+HOTEL_388,CITY_025,Ultimate Royal Suites,2.5,luxury,"A la Carte,Full Board,Breakfast Included,Mountain View,Car Rental",-10
+HOTEL_389,CITY_004,Paradise Royal Hotel,4.0,budget,"Connecting Rooms,Boardroom,Luxury,Babysitting,Phone",63
+HOTEL_390,CITY_022,Commerce Crown Resort,4.0,budget,"Economy,Meditation Area,Terrace,Scenic Location,Business Lounge",111
+HOTEL_391,CITY_037,Professional Heights Resort,4.0,luxury,"Printing Services,Family Rooms,Historic District",84
+HOTEL_392,CITY_017,Deluxe Crown Hotel,4.5,luxury,"Meditation Area,Room Service,Library,Lodge",136
+HOTEL_393,CITY_027,Seaside Crown Hotel,3.0,luxury,"Phone,City View,Suite Hotel",44
+HOTEL_394,CITY_035,Business Crown Hotel,4.0,budget,"Family Rooms,Free WiFi,Private Bathroom,Laundry Service,Economy",90
+HOTEL_395,CITY_049,Commerce Royal Hotel,3.0,mid,"Economy,Coffee Maker,Tour Desk,Quiet Area",48
+HOTEL_396,CITY_046,Ultimate Royal Suites,2.5,luxury,"Extended Stay,Concierge,City View,Shopping District,Connecting Rooms",36
+HOTEL_397,CITY_034,Green Crown Hotel,4.0,mid,"Massage,Kids Club,Entertainment District,Heating",-16
+HOTEL_398,CITY_012,Grand Heights Hotel,4.0,budget,"Cable TV,Spa,Tennis Court,4 Star",147
+HOTEL_399,CITY_006,Waterfront Heights Hotel,2.5,luxury,"Boardroom,Non Smoking,Ticket Service,Accessible,Dry Cleaning,Pool Bar",-17
+HOTEL_400,CITY_017,Grand Plaza Hotel,4.0,budget,"Ticket Service,Premium,City View,Early Check In,Free WiFi",19
+HOTEL_401,CITY_014,Designer Plaza Resort,3.0,mid,"Shared Bathroom,Outdoor Pool,3 Star,Hotel,Library,All Inclusive",-17
+HOTEL_402,CITY_031,Lagoon Royal Resort,2.5,mid,"Dry Cleaning,Refrigerator,Mini Bar,Suite Hotel,Balcony",15
+HOTEL_403,CITY_034,Premier Elite Suites,4.0,budget,"In-Room Dining,Buffet,Extended Stay,Pool Service,Hotel",84
+HOTEL_404,CITY_011,Dawn Plaza Resort,3.0,budget,"Fireplace,Kids Club,Shopping District,Mini Bar",466
+HOTEL_405,CITY_018,Commerce Heights Hotel,2.5,budget,"Family Rooms,Executive Floor,Budget,Refrigerator,Hostel",28
+HOTEL_406,CITY_041,Park Heights Resort,4.5,luxury,"Boutique Hotel,Beachfront,Conference Facilities,A la Carte",-2
+HOTEL_407,CITY_034,Executive Heights Hotel,2.5,budget,"Beach Access,Coffee Maker,High Speed Internet",531
+HOTEL_408,CITY_007,Grand Royal Hotel,4.5,luxury,"City View,Library,Extended Stay,Coffee Maker",44
+HOTEL_409,CITY_015,Regal Plaza Hotel,4.0,luxury,"Buffet,Safe,Hostel,Shared Bathroom",75
+HOTEL_410,CITY_029,Regal Plaza Hotel,4.0,mid,"Presentation Equipment,Boardroom,Bluetooth Speaker",87
+HOTEL_411,CITY_032,Skyline Elite Suites,1.5,luxury,"Economy,Standard,Jacuzzi,Heated Pool,Business Lounge",9
+HOTEL_412,CITY_009,Garden Heights Hotel,3.0,budget,"Indoor Pool,Mini Bar,Full Board,Waterfront",88
+HOTEL_413,CITY_050,Central Royal Resort,3.5,mid,"Bar,Extended Stay,Heating,Balcony,USB Charging,Cable TV",35
+HOTEL_414,CITY_034,Sahara Royal Resort,3.5,mid,"Playground,Steam Room,Rooftop Bar",69
+HOTEL_415,CITY_005,Garden Heights Hotel,3.0,mid,"Executive Floor,Bar,Ticket Service,Standard,Premium",77
+HOTEL_416,CITY_032,Forest Plaza Resort,3.0,luxury,"Free WiFi,Airport Transfer,Library,Translation Services,Ski In Ski Out,Dry Cleaning",13
+HOTEL_417,CITY_027,Commerce Royal Hotel,4.0,luxury,"Child Friendly,Airport Nearby,Sauna,Mini Bar,5 Star,Outdoor Pool",-13
+HOTEL_418,CITY_044,Sunrise Executive Suites,3.0,luxury,"Phone,Scenic Location,City View,Free WiFi",179
+HOTEL_419,CITY_030,Nature Crown Resort,3.0,mid,"Private Bathroom,Wellness Center,USB Charging,Mountain View",198
+HOTEL_420,CITY_011,Grand Central Hotel,3.5,mid,"Motel,Mid-Range,High Speed Internet,Fireplace,Full Board,Airport Nearby",380
+HOTEL_421,CITY_008,Dune Plaza Hotel,4.0,budget,"Minibar,Pool Bar,Child Friendly,Game Room,Beachfront",63
+HOTEL_422,CITY_006,Skyline Plaza Hotel,4.5,budget,"Steam Room,Buffet,Concierge,Conference Facilities,Connecting Rooms,USB Charging",64
+HOTEL_423,CITY_047,Stylish Heights Resort,3.5,budget,"Meditation Area,Water Sports,Smart TV,Mountain View,Fireplace",967
+HOTEL_424,CITY_028,Luxury Plaza Hotel,4.0,budget,"Full Board,Garden,Hotel,Swimming Pool,Boutique Hotel,Waterfront",0
+HOTEL_425,CITY_015,Dawn Crown Hotel,4.5,mid,"Family Rooms,Spa,City View,Child Friendly,Game Room,Jacuzzi",59
+HOTEL_426,CITY_032,Grand Plaza Hotel,4.0,mid,"Fireplace,Wellness Center,Library,Mid-Range",-21
+HOTEL_427,CITY_020,Regal Plaza Resort,4.0,mid,"Kitchenette,Mini Bar,Rooftop Bar,Room Service,Indoor Pool",69
+HOTEL_428,CITY_015,Boutique Crown Hotel,3.0,budget,"Massage,Economy,Waterfront,Ski In Ski Out,Rooftop Bar",57
+HOTEL_429,CITY_022,Panorama Royal Hotel,3.0,luxury,"Budget,Bike Rental,Meeting Rooms,Coffee Maker",-20
+HOTEL_430,CITY_025,Grand Plaza Resort,4.0,budget,"Ski In Ski Out,Airport Nearby,Mountain View",179
+HOTEL_431,CITY_017,Waterfront Elite Hotel,3.0,luxury,"Quiet Area,Beachfront,Waterfront,Historic District",139
+HOTEL_432,CITY_044,Vista Royal Hotel,4.0,mid,"Tennis Court,Accessible,Water Sports,Mini Bar",75
+HOTEL_433,CITY_027,Sunset Plaza Resort,1.5,mid,"Extended Stay,Bike Rental,Game Room,Water Sports,Air Conditioning,Quiet Area",192
+HOTEL_434,CITY_040,Marina Crown Hotel,2.0,mid,"Suite Hotel,Luxury,Safe,Smart TV,Fax Service,Library",45
+HOTEL_435,CITY_011,Luxury Royal Resort,3.0,budget,"Terrace,Business Lounge,Phone,Smoking Allowed,Outdoor Activities",101
+HOTEL_436,CITY_033,Riverside Plaza Hotel,4.0,luxury,"Ski In Ski Out,24 Hour Dining,Train Station Nearby,Ticket Service",126
+HOTEL_437,CITY_014,Downtown Crown Resort,2.5,mid,"Inn,In-Room Dining,Terrace Dining,Free WiFi",51
+HOTEL_438,CITY_036,Artisan Royal Resort,3.5,mid,"Safe,Heated Pool,Library",38
+HOTEL_439,CITY_014,Imperial Plaza Resort,4.5,budget,"Business Center,Extended Stay,Premium,Breakfast Included,Beach Service,Lodge",104
+HOTEL_440,CITY_014,Nature Crown Resort,2.0,luxury,"Continental Breakfast,Lodge,Hot Tub",15
+HOTEL_441,CITY_022,Sunset Royal Resort,4.5,budget,"Balcony,Babysitting,Golf Course,24 Hour Dining,USB Charging",963
+HOTEL_442,CITY_004,Sunset Elite Suites,3.0,luxury,"Connecting Rooms,Budget,Balcony,Air Conditioning,Terrace",40
+HOTEL_443,CITY_014,Sunset Royal Resort,3.5,luxury,"High Speed Internet,Dry Cleaning,Full Board,Room Service",40
+HOTEL_444,CITY_036,Green Royal Resort,2.5,luxury,"Pet Friendly,Family Rooms,Bike Rental,Tennis Court,Quiet Area,Economy",970
+HOTEL_445,CITY_010,Palm Heights Hotel,4.0,mid,"Ocean View,Water Sports,Smart TV,All Inclusive,4 Star,Work Desk",59
+HOTEL_446,CITY_010,Commerce Heights Hotel,4.0,budget,"Meditation Area,Hostel,Secretarial Services,Restaurant,Business Hotel,Half Board",-8
+HOTEL_447,CITY_009,Seaside Royal Resort,3.5,mid,"Laundry Service,Spa Services,Valet Parking",47
+HOTEL_448,CITY_027,Professional Heights Resort,5.0,mid,"Connecting Rooms,Resort,Terrace,Playground,Motel,Heating",64
+HOTEL_449,CITY_007,Skyline Heights Resort,3.0,mid,"Room Service,Terrace Dining,Airport Transfer,Early Check In,Ocean View,Kitchenette",472
+HOTEL_450,CITY_024,Lakeside Royal Suites,3.5,luxury,"Continental Breakfast,Room Service,Budget",61
+HOTEL_451,CITY_038,Artisan Heights Hotel,3.0,mid,"Heating,Room Service,Minibar,Heated Pool,Kids Club,Beach Access",101
+HOTEL_452,CITY_019,Grand Executive Suites,2.5,luxury,"Private Bathroom,Continental Breakfast,Indoor Pool,Heated Pool,Kids Club,Boutique Hotel",48
+HOTEL_453,CITY_025,Imperial Crown Hotel,4.5,mid,"Kitchenette,Golf Course,Sauna,Business Lounge",-27
+HOTEL_454,CITY_023,Grand Heights Hotel,4.0,luxury,"Refrigerator,Cable TV,Restaurant,Ticket Service,Bike Rental,USB Charging",11
+HOTEL_455,CITY_002,Commerce Royal Hotel,4.0,mid,"Fitness Center,Budget,Train Station Nearby",156
+HOTEL_456,CITY_010,Luxury Royal Resort,3.5,budget,"Work Desk,5 Star,Lodge,Free WiFi,Water Sports",54
+HOTEL_457,CITY_020,Sunrise Elite Hotel,3.0,budget,"Luxury,Playground,Continental Breakfast,Minibar,Business Hotel",3
+HOTEL_458,CITY_047,Marina Crown Hotel,3.0,budget,"Minibar,City View,USB Charging,Presentation Equipment,Bluetooth Speaker,Heated Pool",22
+HOTEL_459,CITY_040,Park Plaza Resort,2.5,luxury,"Balcony,Restaurant,Suite Hotel,Steam Room,Golf Course",154
+HOTEL_460,CITY_036,Luxury Royal Resort,4.5,luxury,"Balcony,Valet Parking,Executive Floor",25
+HOTEL_461,CITY_008,Royal Central Resort,3.0,budget,"Scenic Location,Printing Services,Restaurant,Ticket Service,Spa Services",28
+HOTEL_462,CITY_006,Stylish Royal Resort,3.5,luxury,"Mini Bar,Car Rental,City Center,Shared Bathroom",58
+HOTEL_463,CITY_034,Garden Crown Resort,4.0,budget,"Meditation Area,Business Hotel,Premium,Steam Room,Mid-Range",17
+HOTEL_464,CITY_010,Dawn Heights Resort,4.5,mid,"Fireplace,Mini Bar,Outdoor Pool",-12
+HOTEL_465,CITY_003,Ridge Crown Hotel,4.0,luxury,"Jacuzzi,Buffet,Child Friendly,Meditation Area,Smoking Allowed",466
+HOTEL_466,CITY_006,Mountain Crown Resort,3.0,luxury,"Deluxe,Valet Parking,Game Room,Outdoor Pool,Beach Service",34
+HOTEL_467,CITY_021,Summit Heights Resort,3.0,mid,"Printing Services,Late Check Out,Balcony,Shopping District,5 Star,Tennis Court",20
+HOTEL_468,CITY_032,Mountain Royal Hotel,1.5,luxury,"Heating,Business Center,Game Room,All Inclusive",-21
+HOTEL_469,CITY_044,Luxury Heights Hotel,5.0,budget,"Water Sports,All Inclusive,Extended Stay,Ocean View,Beach Service",12
+HOTEL_470,CITY_015,Oasis Heights Resort,4.0,luxury,"Non Smoking,Wellness Center,Bluetooth Speaker",21
+HOTEL_471,CITY_033,Green Royal Resort,3.5,budget,"Restaurant,Financial District,Refrigerator,Yoga Classes",55
+HOTEL_472,CITY_044,Boutique Plaza Hotel,3.0,budget,"Boardroom,Historic District,Financial District,Airport Transfer,Safe",30
+HOTEL_473,CITY_002,Lakeside Crown Hotel,4.0,budget,"All Inclusive,A la Carte,City View",36
+HOTEL_474,CITY_030,Downtown Plaza Hotel,3.5,budget,"Air Conditioning,Phone,Connecting Rooms,Garden View,Game Room",152
+HOTEL_475,CITY_021,Mirage Heights Resort,3.0,luxury,"Fireplace,Executive Floor,Business Hotel,Room Service,Pool Service,Child Friendly",67
+HOTEL_476,CITY_011,Vista Crown Hotel,3.5,budget,"Garden View,Car Rental,Pool Bar",46
+HOTEL_477,CITY_036,Seaside Heights Resort,3.0,luxury,"Meditation Area,High Speed Internet,Private Bathroom,Translation Services,Airport Transfer,Airport Nearby",85
+HOTEL_478,CITY_002,Prestige Royal Hotel,3.5,luxury,"Steam Room,Fax Service,Terrace,Pet Friendly,Fitness Center,Wellness Center",71
+HOTEL_479,CITY_001,Central Royal Resort,2.0,mid,"Standard,3 Star,Mid-Range,Tour Desk,Pet Friendly,Fax Service",-2
+HOTEL_480,CITY_004,Ridge Crown Hotel,2.5,luxury,"Car Rental,Terrace Dining,Standard,Bluetooth Speaker,Kitchenette,Non Smoking",4
+HOTEL_481,CITY_002,Waterfront Plaza Hotel,3.0,mid,"Business Center,Meditation Area,Pool Bar,Beach Access,Inn,All Inclusive",96
+HOTEL_482,CITY_031,Summit Crown Hotel,3.5,budget,"All Inclusive,Tour Desk,Historic District,Golf Course,Accessible,Deluxe",64
+HOTEL_483,CITY_026,Downtown Heights Hotel,3.0,budget,"Playground,Printing Services,Laundry Service,Continental Breakfast,Valet Parking",18
+HOTEL_484,CITY_011,Sunrise Crown Resort,3.5,mid,"Conference Facilities,Laundry Service,Cable TV,Late Check Out,Beachfront,Half Board",-12
+HOTEL_485,CITY_021,Sunrise Heights Hotel,3.0,luxury,"Hostel,Financial District,Water Sports,Hot Tub,Bar",80
+HOTEL_486,CITY_004,Skyline Central Hotel,2.5,budget,"Buffet,Luxury,Terrace Dining",31
+HOTEL_487,CITY_005,Park Plaza Resort,3.5,mid,"24 Hour Dining,Babysitting,Airport Nearby,Printing Services,Waterfront",89
+HOTEL_488,CITY_014,Dune Heights Hotel,3.5,mid,"Dry Cleaning,Air Conditioning,Indoor Activities",39
+HOTEL_489,CITY_036,Regal Plaza Hotel,4.0,budget,"Balcony,Kitchenette,Indoor Pool,Breakfast Included,Non Smoking",312
+HOTEL_490,CITY_036,Artisan Heights Hotel,4.5,budget,"Translation Services,3 Star,All Inclusive,Motel,Jacuzzi",-11
+HOTEL_491,CITY_046,Horizon Heights Hotel,5.0,luxury,"Business Hotel,Minibar,City View,Fitness Center,Non Smoking,Shared Bathroom",74
+HOTEL_492,CITY_047,Beach Heights Resort,4.5,luxury,"Steam Room,Kids Club,Heated Pool,Game Room,Refrigerator,Early Check In",1039
+HOTEL_493,CITY_048,Peak Crown Resort,3.0,luxury,"Beach Service,In-Room Dining,Golf Course,Ticket Service,Accessible",82
+HOTEL_494,CITY_050,Supreme Heights Hotel,4.0,budget,"Standard,Spa,Scenic Location",68
+HOTEL_495,CITY_033,Paradise Royal Hotel,4.5,mid,"Pool Bar,Hotel,Garden,Terrace,Buffet,Waterfront",27
+HOTEL_496,CITY_037,Vista Plaza Resort,4.5,budget,"Smoking Allowed,Terrace,Steam Room,Safe,Half Board,Accessible",134
+HOTEL_497,CITY_045,Tropical Crown Resort,3.0,budget,"Garden,Buffet,Balcony,Child Friendly,Jacuzzi",21
+HOTEL_498,CITY_036,Central Plaza Resort,3.5,mid,"Smart TV,Fax Service,Resort,Heating,Business Hotel",35
+HOTEL_499,CITY_042,Skyline Heights Resort,2.5,mid,"Pool Bar,Ocean View,Executive Floor,Economy,Boutique Hotel,Bike Rental",42
+HOTEL_500,CITY_034,Royal Plaza Hotel,4.5,budget,"Waterfront,Garden,Business Center,Spa,Valet Parking",56

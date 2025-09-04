@@ -6,8 +6,8 @@ output "kms-key-arn" {
 output "s3-bucket-names" {
   description = "Names of the S3 buckets"
   value = {
-    datasets  = aws_s3_bucket.bkr-datasets-s3-bucket.id
-    artefacts = aws_s3_bucket.bkr-artefacts-s3-bucket.id
+    datasets  = aws_s3_bucket.bkr-buckets["datasets"].bucket
+    artefacts = aws_s3_bucket.bkr-buckets["artefacts"].bucket
   }
 }
 
