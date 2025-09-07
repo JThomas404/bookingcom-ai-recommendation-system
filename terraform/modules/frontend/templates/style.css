@@ -243,3 +243,129 @@ main {
 .disclaimer-content strong {
     color: #0071C2;
 }
+
+.offers-section, .trending-section, .recommended-section {
+    max-width: 1140px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.offers-section h2, .trending-section h2, .recommended-section h2 {
+    font-family: Arial, sans-serif;
+    font-size: 28px;
+    color: white;
+    margin-bottom: 8px;
+}
+
+.section-subtitle {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+.offers-grid, .trending-grid, .recommended-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.offer-card, .trending-card, .recommended-card {
+    background: #131212b5;
+    border: 2px solid #003580;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    position: relative;
+}
+
+.offer-badge {
+    position: absolute;
+    top: -10px;
+    right: 15px;
+    background: #FEBB02;
+    color: #003580;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 12px;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+}
+
+.offer-card h3, .trending-card h3, .recommended-card h3 {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    color: #0071C2;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.offer-card p, .trending-card p, .recommended-card p {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: white;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+
+.offer-price, .trending-price, .recommended-price {
+    font-family: Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+    color: #FEBB02;
+    margin-bottom: 8px;
+}
+
+.offer-validity, .trending-stats {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #ccc;
+}
+
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 15px;
+}
+
+.rating-score {
+    background: #0071C2;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    min-width: 45px;
+    text-align: center;
+}
+
+.rating-details {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.rating-text {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+.rating-reviews {
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .offers-grid, .trending-grid, .recommended-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .offers-section, .trending-section, .recommended-section {
+        margin: 30px auto;
+    }
+}

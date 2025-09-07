@@ -28,7 +28,8 @@ def lambda_handler(event, context):
         'CITY_007': 'Rome',
         'CITY_008': 'Berlin',
         'CITY_009': 'Prague',
-        'CITY_010': 'Vienna'
+        'CITY_010': 'Vienna',
+        'CITY_011': 'Wellington'
     }
     
     # Initialise the DynamoDB client connection
@@ -65,7 +66,7 @@ def lambda_handler(event, context):
                     'city': city_input,
                     'hotels': [],
                     'count': 0,
-                    'message': f'No hotels available in {city_input}. Try: London, Paris, New York, Tokyo, Barcelona, Amsterdam, Rome, Berlin, Prague, Vienna'
+                    'message': f'No hotels available in {city_input}. Try: London, Paris, New York, Tokyo, Barcelona, Amsterdam, Rome, Berlin, Prague, Vienna, Wellington'
                 })
             }
         # Convert and validate limit
