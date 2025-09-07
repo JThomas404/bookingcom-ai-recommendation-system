@@ -55,14 +55,19 @@ def lambda_handler(event, context):
         # Validate city_id
         if not city_id:
             return {
-                'statusCode': 400,
+                'statusCode': 200,
                 'headers': {
                     'Access-Control-Allow-Origin': '*',
                     'Access-Control-Allow-Headers': 'Content-Type',
                     'Access-Control-Allow-Methods': 'GET,OPTIONS'
                 },
-                'body': json.dumps({'error': 'city_id is required'})
-                }
+                'body': json.dumps({
+                    'city': city_input,
+                    'hotels': [],
+                    'count': 0,
+                    'message': f'No hotels available in {city_input}. Try: London, Paris, New York, Tokyo, Barcelona, Amsterdam, Rome, Berlin, Prague, Vienna'
+                })
+            }
         # Convert and validate limit
         try:
             limit = int(params.get('limit', 10))
