@@ -2,7 +2,7 @@
 
 A serverless hotel recommendation system built on AWS, demonstrating enterprise-grade cloud architecture with AI-powered personalisation, A/B testing capabilities, and modern web deployment patterns.
 
-**Live Demo**: https://d1mszkslwzcsxd.cloudfront.net
+[**Booking.com Live Demo**](https://d1mszkslwzcsxd.cloudfront.net)
 
 ## Table of Contents
 
