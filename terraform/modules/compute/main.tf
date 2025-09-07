@@ -270,6 +270,50 @@ resource "aws_api_gateway_method" "bkr-health-get-method" {
   authorization = "NONE"
 }
 
+resource "aws_api_gateway_method" "bkr-health-options-method" {
+  rest_api_id   = aws_api_gateway_rest_api.bkr-rest-api.id
+  resource_id   = aws_api_gateway_resource.bkr-health-endpoint.id
+  http_method   = "OPTIONS"
+  authorization = "NONE"
+}
+
+resource "aws_api_gateway_integration" "bkr-health-options" {
+  rest_api_id = aws_api_gateway_rest_api.bkr-rest-api.id
+  resource_id = aws_api_gateway_resource.bkr-health-endpoint.id
+  http_method = aws_api_gateway_method.bkr-health-options-method.http_method
+  type        = "MOCK"
+
+  request_templates = {
+    "application/json" = "{\"statusCode\": 200}"
+  }
+}
+
+resource "aws_api_gateway_method_response" "bkr-health-options-response" {
+  rest_api_id = aws_api_gateway_rest_api.bkr-rest-api.id
+  resource_id = aws_api_gateway_resource.bkr-health-endpoint.id
+  http_method = aws_api_gateway_method.bkr-health-options-method.http_method
+  status_code = "200"
+
+  response_parameters = {
+    "method.response.header.Access-Control-Allow-Headers" = true
+    "method.response.header.Access-Control-Allow-Methods" = true
+    "method.response.header.Access-Control-Allow-Origin"  = true
+  }
+}
+
+resource "aws_api_gateway_integration_response" "bkr-health-options-response" {
+  rest_api_id = aws_api_gateway_rest_api.bkr-rest-api.id
+  resource_id = aws_api_gateway_resource.bkr-health-endpoint.id
+  http_method = aws_api_gateway_method.bkr-health-options-method.http_method
+  status_code = aws_api_gateway_method_response.bkr-health-options-response.status_code
+
+  response_parameters = {
+    "method.response.header.Access-Control-Allow-Headers" = "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'"
+    "method.response.header.Access-Control-Allow-Methods" = "'GET,OPTIONS'"
+    "method.response.header.Access-Control-Allow-Origin"  = "'*'"
+  }
+}
+
 resource "aws_api_gateway_integration" "bkr-lambda-health" {
   rest_api_id = aws_api_gateway_rest_api.bkr-rest-api.id
   resource_id = aws_api_gateway_resource.bkr-health-endpoint.id
@@ -302,6 +346,50 @@ resource "aws_api_gateway_method" "bkr-reco-v1-get-method" {
   authorization = "NONE"
 }
 
+resource "aws_api_gateway_method" "bkr-reco-v1-options-method" {
+  rest_api_id   = aws_api_gateway_rest_api.bkr-rest-api.id
+  resource_id   = aws_api_gateway_resource.bkr-reco-v1-endpoint.id
+  http_method   = "OPTIONS"
+  authorization = "NONE"
+}
+
+resource "aws_api_gateway_integration" "bkr-reco-v1-options" {
+  rest_api_id = aws_api_gateway_rest_api.bkr-rest-api.id
+  resource_id = aws_api_gateway_resource.bkr-reco-v1-endpoint.id
+  http_method = aws_api_gateway_method.bkr-reco-v1-options-method.http_method
+  type        = "MOCK"
+
+  request_templates = {
+    "application/json" = "{\"statusCode\": 200}"
+  }
+}
+
+resource "aws_api_gateway_method_response" "bkr-reco-v1-options-response" {
+  rest_api_id = aws_api_gateway_rest_api.bkr-rest-api.id
+  resource_id = aws_api_gateway_resource.bkr-reco-v1-endpoint.id
+  http_method = aws_api_gateway_method.bkr-reco-v1-options-method.http_method
+  status_code = "200"
+
+  response_parameters = {
+    "method.response.header.Access-Control-Allow-Headers" = true
+    "method.response.header.Access-Control-Allow-Methods" = true
+    "method.response.header.Access-Control-Allow-Origin"  = true
+  }
+}
+
+resource "aws_api_gateway_integration_response" "bkr-reco-v1-options-response" {
+  rest_api_id = aws_api_gateway_rest_api.bkr-rest-api.id
+  resource_id = aws_api_gateway_resource.bkr-reco-v1-endpoint.id
+  http_method = aws_api_gateway_method.bkr-reco-v1-options-method.http_method
+  status_code = aws_api_gateway_method_response.bkr-reco-v1-options-response.status_code
+
+  response_parameters = {
+    "method.response.header.Access-Control-Allow-Headers" = "'Content-Type,X-Amz-Date,Authorization,X-Api-Key,X-Amz-Security-Token'"
+    "method.response.header.Access-Control-Allow-Methods" = "'GET,OPTIONS'"
+    "method.response.header.Access-Control-Allow-Origin"  = "'*'"
+  }
+}
+
 resource "aws_lambda_permission" "bkr-reco-v1-api-gw-allow" {
   function_name = aws_lambda_function.bkr-reco-v1.function_name
   statement_id  = "AllowExecutionFromAPIGateway"
@@ -321,15 +409,54 @@ resource "aws_api_gateway_integration" "bkr-lambda-reco-v1" {
   uri                     = aws_lambda_function.bkr-reco-v1.invoke_arn
 }
 
+resource "aws_api_gateway_method_response" "bkr-reco-v1-get-response" {
+  rest_api_id = aws_api_gateway_rest_api.bkr-rest-api.id
+  resource_id = aws_api_gateway_resource.bkr-reco-v1-endpoint.id
+  http_method = aws_api_gateway_method.bkr-reco-v1-get-method.http_method
+  status_code = "200"
+
+  response_parameters = {
+    "method.response.header.Access-Control-Allow-Origin" = true
+  }
+}
+
+resource "aws_api_gateway_method_response" "bkr-health-get-response" {
+  rest_api_id = aws_api_gateway_rest_api.bkr-rest-api.id
+  resource_id = aws_api_gateway_resource.bkr-health-endpoint.id
+  http_method = aws_api_gateway_method.bkr-health-get-method.http_method
+  status_code = "200"
+
+  response_parameters = {
+    "method.response.header.Access-Control-Allow-Origin" = true
+  }
+}
+
 resource "aws_api_gateway_deployment" "bkr-api-gw-deployment" {
   depends_on = [
     aws_api_gateway_method.bkr-health-get-method,
     aws_api_gateway_integration.bkr-lambda-health,
+    aws_api_gateway_method.bkr-health-options-method,
+    aws_api_gateway_integration.bkr-health-options,
     aws_api_gateway_method.bkr-reco-v1-get-method,
-    aws_api_gateway_integration.bkr-lambda-reco-v1
+    aws_api_gateway_integration.bkr-lambda-reco-v1,
+    aws_api_gateway_method.bkr-reco-v1-options-method,
+    aws_api_gateway_integration.bkr-reco-v1-options,
+    aws_api_gateway_method_response.bkr-reco-v1-get-response,
+    aws_api_gateway_method_response.bkr-health-get-response
   ]
 
   rest_api_id = aws_api_gateway_rest_api.bkr-rest-api.id
+
+  triggers = {
+    redeployment = sha1(jsonencode([
+      aws_api_gateway_resource.bkr-health-endpoint.id,
+      aws_api_gateway_method.bkr-health-get-method.id,
+      aws_api_gateway_integration.bkr-lambda-health.id,
+      aws_api_gateway_resource.bkr-reco-v1-endpoint.id,
+      aws_api_gateway_method.bkr-reco-v1-get-method.id,
+      aws_api_gateway_integration.bkr-lambda-reco-v1.id,
+    ]))
+  }
 
   lifecycle {
     create_before_destroy = true

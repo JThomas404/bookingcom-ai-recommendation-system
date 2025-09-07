@@ -8,7 +8,13 @@ output "s3-bucket-names" {
   value = {
     datasets  = aws_s3_bucket.bkr-buckets["datasets"].bucket
     artefacts = aws_s3_bucket.bkr-buckets["artefacts"].bucket
+    website   = aws_s3_bucket.bkr-buckets["website"].bucket
   }
+}
+
+output "website-regional-domain-name" {
+  description = "Regional domain name of the website S3 bucket"
+  value       = aws_s3_bucket.bkr-buckets["website"].bucket_regional_domain_name
 }
 
 output "dynamodb-table-names" {

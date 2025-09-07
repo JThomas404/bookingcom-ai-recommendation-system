@@ -18,6 +18,7 @@ locals {
   s3-buckets = {
     datasets  = "${var.project_prefix}-datasets-${random_id.bkr-s3-bucket-suffix.hex}"
     artefacts = "${var.project_prefix}-artefacts-${random_id.bkr-s3-bucket-suffix.hex}"
+    website   = "${var.project_prefix}-website-${random_id.bkr-s3-bucket-suffix.hex}"
   }
 }
 
@@ -35,17 +36,9 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "bkr-buckets-sse" 
 
   rule {
     apply_server_side_encryption_by_default {
-      kms_master_key_id = aws_kms_key.bkr-kms-key.arn
-      sse_algorithm     = "aws:kms"
+      kms_master_key_id = each.key == "website" ? null : aws_kms_key.bkr-kms-key.arn
+      sse_algorithm     = each.key == "website" ? "AES256" : "aws:kms"
     }
-  }
-}
-
-resource "aws_s3_bucket_versioning" "bkr-buckets-versioning" {
-  for_each = local.s3-buckets
-  bucket   = aws_s3_bucket.bkr-buckets[each.key].id
-  versioning_configuration {
-    status = "Enabled"
   }
 }
 
@@ -57,6 +50,14 @@ resource "aws_s3_bucket_public_access_block" "bkr-buckets-access-block" {
   block_public_policy     = true
   ignore_public_acls      = true
   restrict_public_buckets = true
+}
+
+resource "aws_s3_bucket_website_configuration" "bkr-web-config" {
+  bucket = aws_s3_bucket.bkr-buckets["website"].id
+
+  index_document {
+    suffix = "index.html"
+  }
 }
 
 # DynamoDB Table for Hotels

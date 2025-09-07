@@ -2,24 +2,65 @@ import boto3
 import os
 import json
 import logging
+from decimal import Decimal
 from boto3.dynamodb.types import TypeDeserializer
 
 # Configure logging
 logger = logging.getLogger()
 logger.setLevel(logging.INFO)
 
+# Custom JSON encoder for Decimal objects
+class DecimalEncoder(json.JSONEncoder):
+    def default(self, obj):
+        if isinstance(obj, Decimal):
+            return float(obj)
+        return super(DecimalEncoder, self).default(obj)
+
 def lambda_handler(event, context):
+    # City ID to name mapping
+    CITY_NAMES = {
+        'CITY_001': 'London',
+        'CITY_002': 'Paris', 
+        'CITY_003': 'New York',
+        'CITY_004': 'Tokyo',
+        'CITY_005': 'Barcelona',
+        'CITY_006': 'Amsterdam',
+        'CITY_007': 'Rome',
+        'CITY_008': 'Berlin',
+        'CITY_009': 'Prague',
+        'CITY_010': 'Vienna'
+    }
+    
     # Initialise the DynamoDB client connection
     dynamodb = boto3.client('dynamodb')
 
     # Extract query parameters
     params = event.get("queryStringParameters") or {}
-    city_id = params.get('city_id')
+    city_input = params.get('city_id') or params.get('city')
+    
+    # Handle both city names and city IDs
+    if city_input in CITY_NAMES:
+        city_id = city_input
+        city_name = CITY_NAMES[city_id]
+    else:
+        # Try to find city ID by name
+        city_id = None
+        city_name = city_input
+        for cid, cname in CITY_NAMES.items():
+            if cname.lower() == city_input.lower():
+                city_id = cid
+                city_name = cname
+                break
     try:
         # Validate city_id
         if not city_id:
             return {
                 'statusCode': 400,
+                'headers': {
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Headers': 'Content-Type',
+                    'Access-Control-Allow-Methods': 'GET,OPTIONS'
+                },
                 'body': json.dumps({'error': 'city_id is required'})
                 }
         # Convert and validate limit
@@ -36,6 +77,11 @@ def lambda_handler(event, context):
         logger.error(f'Unexpected error in parameter processing: {str(e)}')
         return {
             'statusCode': 500,
+            'headers': {
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Headers': 'Content-Type',
+                'Access-Control-Allow-Methods': 'GET,OPTIONS'
+            },
             'body': json.dumps({'error': 'Internal server error'})
         }        
 
@@ -44,6 +90,11 @@ def lambda_handler(event, context):
         logger.error('HOTELS_TABLE environment variable not set')
         return {
             'statusCode': 500,
+            'headers': {
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Headers': 'Content-Type',
+                'Access-Control-Allow-Methods': 'GET,OPTIONS'
+            },
             'body': json.dumps({'error': 'Service configuration error'})
         }
     try:
@@ -58,6 +109,11 @@ def lambda_handler(event, context):
         logger.error(f'Error querying DynamoDB: {str(e)}')
         return {
             'statusCode': 500,
+            'headers': {
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Headers': 'Content-Type',
+                'Access-Control-Allow-Methods': 'GET,OPTIONS'
+            },
             'body': json.dumps({'error': str(e)})
         }  
 
@@ -66,7 +122,14 @@ def lambda_handler(event, context):
     if not items:
         return {
             'statusCode': 200,
+            'headers': {
+                'Access-Control-Allow-Origin': '*',
+                'Access-Control-Allow-Headers': 'Content-Type',
+                'Access-Control-Allow-Methods': 'GET,OPTIONS'
+            },
             'body': json.dumps({
+                'city': city_name,
+                'city_id': city_id,
                 'hotels': [],
                 'count': 0,
                 'message': 'No hotels found in this city'
@@ -85,6 +148,11 @@ def lambda_handler(event, context):
         rating = float(hotel.get('rating', 0))
         popularity = float(hotel.get('popularity_score', 0))
         hotel_tags = hotel.get('tags', '')
+        
+        # Convert all Decimal values to float for JSON serialization
+        for key, value in hotel.items():
+            if isinstance(value, Decimal):
+                hotel[key] = float(value)
         
         # Calculate each scoring component  
         normalised_rating = (rating - 1) / 4
@@ -111,9 +179,16 @@ def lambda_handler(event, context):
 
     return {
         'statusCode': 200,
+        'headers': {
+            'Access-Control-Allow-Origin': '*',
+            'Access-Control-Allow-Headers': 'Content-Type',
+            'Access-Control-Allow-Methods': 'GET,OPTIONS'
+        },
         'body': json.dumps({
+            'city': city_name,
+            'city_id': city_id,
             'hotels': hotels,
             'count': len(hotels)
-        })
+        }, cls=DecimalEncoder)
     }
 

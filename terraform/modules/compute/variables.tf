@@ -18,6 +18,7 @@ variable "s3_bucket_names" {
   type = object({
     datasets  = string
     artefacts = string
+    website   = string
   })
 }
 

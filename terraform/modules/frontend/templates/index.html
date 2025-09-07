@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="booking-header">
+        <div class="container">
+            <div class="header-content">
+                <img src="logos/booking-logo-large.png" alt="Booking Logo" class="logo">
+                <div class="header-text">
+                    <h1>Hotel Recommendations</h1>
+                    <p>Get personalised hotel recommendations powered by AI</p>
+                </div>
+            </div>
+            <form id="recommendationForm">
+                <div class="form-field">
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required placeholder="e.g., London, Paris, Tokyo">
+                </div>
+                
+                <div class="form-field">
+                    <label for="preferences">Preferences:</label>
+                    <input type="text" id="preferences" name="preferences" placeholder="e.g., luxury, budget">
+                </div>
+                
+                <button type="submit">Search</button>
+            </form>
+            
+            <div class="disclaimer">
+                <button type="button" class="disclaimer-trigger">Demo Information</button>
+                <div class="disclaimer-content">
+                    <strong>Demo Project Notice:</strong><br>
+                    This is a demonstration project created to simulate how Booking.com functions. All hotels and data are fictional for testing purposes only.<br><br>
+                    <strong>Test Cities:</strong> London, Paris, New York, Tokyo, Barcelona, Amsterdam, Rome, Berlin, Prague, Vienna<br><br>
+                    <strong>Preference Tags:</strong> luxury, budget, business, family, romantic, spa, pool, gym, wifi, parking<br><br>
+                    <strong>How it works:</strong> The AI recommendation system analyses your preferences and matches them with hotel features to provide personalised recommendations with scoring based on relevance.
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id="results" class="results" style="display: none;">
+            <h3>Results</h3>
+            <div id="variant"></div>
+            <div id="recommendations"></div>
+        </div>
+    </main>
+
+    <script>
+        const API_URL = 'https://df5ib6jx72.execute-api.us-east-1.amazonaws.com/dev';
+        
+        document.getElementById('recommendationForm').addEventListener('submit', async function(e) {
+            e.preventDefault();
+            
+            const city = document.getElementById('city').value;
+            const preferences = document.getElementById('preferences').value;
+            const resultsDiv = document.getElementById('results');
+            const variantDiv = document.getElementById('variant');
+            const recommendationsDiv = document.getElementById('recommendations');
+            
+            // Show loading state
+            resultsDiv.style.display = 'block';
+            variantDiv.innerHTML = '<div class="loading">Loading...</div>';
+            recommendationsDiv.innerHTML = '';
+            
+            try {
+                // Build query parameters
+                const params = new URLSearchParams({ city_id: city });
+                if (preferences) {
+                    params.append('user_tags', preferences);
+                }
+                
+                const response = await fetch(API_URL + '/recommendations?' + params);
+                const data = await response.json();
+                
+                if (response.ok) {
+                    // Show variant information with city name
+                    variantDiv.innerHTML = '<div class="variant">Hotels in ' + (data.city || city) + ' - Algorithm: Recommendation v1</div>';
+                    
+                    // Show recommendations
+                    if (data.hotels && data.hotels.length > 0) {
+                        let html = '<h4>Recommended Hotels:</h4><ul>';
+                        data.hotels.forEach(hotel => {
+                            html += '<li><strong>' + hotel.hotel_name + '</strong> - Rating: ' + hotel.rating + '/5, Score: ' + hotel.recommendation_score.toFixed(2) + '</li>';
+                        });
+                        html += '</ul>';
+                        recommendationsDiv.innerHTML = html;
+                    } else {
+                        recommendationsDiv.innerHTML = '<p>No hotels found for ' + (data.city || city) + '.</p>';
+                    }
+                } else {
+                    throw new Error(data.error || 'Failed to get recommendations');
+                }
+            } catch (error) {
+                variantDiv.innerHTML = '<div class="error">Error: ' + error.message + '</div>';
+                recommendationsDiv.innerHTML = '';
+            }
+        });
+    </script>
+</body>
+</html>

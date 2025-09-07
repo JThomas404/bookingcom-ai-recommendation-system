@@ -1,11 +1,12 @@
-variable "project_name" {
-  type    = string
-  default = "Booking.com Recommendation System"
-}
-
 variable "project_prefix" {
-  type    = string
-  default = "bkr"
+  type        = string
+  default     = "bkr"
+  description = "Project prefix for resource naming"
+
+  validation {
+    condition     = can(regex("^[a-z]{2,4}$", var.project_prefix))
+    error_message = "Project prefix must be 2-4 lowercase letters."
+  }
 }
 
 variable "environment" {
@@ -22,4 +23,3 @@ variable "tags" {
   type    = map(string)
   default = {}
 }
-
